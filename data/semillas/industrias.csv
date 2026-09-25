@@ -1,0 +1,8 @@
+codigo,nombre,origen,fuente,estado
+FLORICOLA,Florícola,Confirmado,"T1, T2",por_validar
+ALIMENTOS,Producción de alimentos,Confirmado,T1,por_validar
+PETROLERA,Petrolera,Confirmado,"T1, T2",por_validar
+CONSTRUCCION,Construcción,Confirmado,"T1, T2, T3",por_validar
+SEGURIDAD,Seguridad,Confirmado,"T1, T2, T3",por_validar
+MINERA,Minera,Confirmado,"T2, T3",por_validar
+EDUCACION,Educación,Confirmado,T3,por_validar

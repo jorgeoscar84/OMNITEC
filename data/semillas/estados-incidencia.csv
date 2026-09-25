@@ -1,0 +1,12 @@
+orden,estado,pausa_sla,origen
+1,Abierto,no,Levantamiento v3
+2,Asignado,no,Levantamiento v3
+3,En diagnóstico,no,Levantamiento v3
+4,Mitigado,no,Levantamiento v3
+5,Esperando cliente,sí,Levantamiento v3
+6,Esperando repuesto,sí,Levantamiento v3
+7,Esperando proveedor,sí,Levantamiento v3
+8,Resuelto,no,Levantamiento v3
+9,Validado,no,Levantamiento v3
+10,Cerrado,no,Levantamiento v3
+11,Reabierto,no,Levantamiento v3

@@ -1,0 +1,17 @@
+codigo,nombre,codigo_padre,nivel,origen,fuente,nota,estado
+RADIO,Radiocomunicaciones,,1,Confirmado,T1,,por_validar
+RADIO-USR,Equipos de usuario,RADIO,2,Confirmado,T1,,por_validar
+RADIO-USR-POR,Radios portátiles,RADIO-USR,3,Confirmado,T1,,por_validar
+RADIO-USR-MOV,Radios móviles,RADIO-USR,3,Confirmado,T1,Una radio base puede usarse como móvil,por_validar
+RADIO-USR-BAS,Radios base,RADIO-USR,3,Confirmado,T1,,por_validar
+RADIO-INF,Infraestructura,RADIO,2,Confirmado,T1,,por_validar
+RADIO-INF-REP,Repetidoras,RADIO-INF,3,Confirmado,T1,,por_validar
+RADIO-INF-DUP,Duplexores,RADIO-INF,3,Confirmado,T1,,por_validar
+RADIO-INF-ANT,Antenas,RADIO-INF,3,Confirmado,T1,,por_validar
+RADIO-INF-ENE,Fuentes de poder y energía,RADIO-INF,3,Confirmado,T1,,por_validar
+RADIO-INF-CAB,"Cables, conectores y arneses",RADIO-INF,3,Confirmado,T1,Arneses entre repetidora y duplexor,por_validar
+RADIO-INF-CAS,"Caseta, torre y elementos asociados",RADIO-INF,3,Levantamiento v3,7.11,,por_validar
+RADIO-ACC,Accesorios de radio,RADIO,2,Propuesto,,"Baterías, clips, cargadores y similares; el catálogo actual de repuestos los incluye. FALTA INFORMACIÓN: CONFIRMAR",por_validar
+OTROS,Otros equipos atendidos,,1,Confirmado,T1,,por_validar
+OTROS-IMP,Impresoras,OTROS,2,Confirmado,T1,FALTA INFORMACIÓN: ¿IMPRESORAS ZEBRA? MICROCATEGORÍAS,por_validar
+OTROS-CAC,Controles de acceso,OTROS,2,Confirmado,T1,FALTA INFORMACIÓN: MICROCATEGORÍAS,por_validar

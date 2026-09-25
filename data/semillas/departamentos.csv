@@ -1,0 +1,11 @@
+codigo,nombre,codigo_padre,origen
+GERENCIA,Gerencia general,,Confirmado
+COMERCIAL,Área comercial,GERENCIA,Confirmado
+MARKETING,Marketing,GERENCIA,Levantamiento v3
+RECEPCION,Atención y recepción,GERENCIA,Confirmado
+TECNICA,Área técnica,GERENCIA,Confirmado
+TECNICA-COORD,Coordinación,TECNICA,Levantamiento v3
+TECNICA-LAB,Laboratorio,TECNICA,Confirmado
+TECNICA-CAMPO,Campo e ingeniería RF,TECNICA,Confirmado
+INVENTARIO,Inventario y compras,GERENCIA,Levantamiento v3
+ADMIN,Administración y contabilidad,GERENCIA,Levantamiento v3

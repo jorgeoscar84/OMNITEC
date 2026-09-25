@@ -1,0 +1,12 @@
+codigo,nombre,origen,nota
+SUPERADMIN,Superadministrador,Confirmado,Gerencia general como administrador general (T2)
+GERENCIA,Gerencia,Confirmado,
+SUPERVISOR,Supervisor o jefatura de departamento,Confirmado,T2
+ASESOR,Asesor comercial,Confirmado,
+MARKETING,Marketing,Levantamiento v3,
+RECEPCION,Recepción,Confirmado,T2
+TECNICO,Técnico,Confirmado,Laboratorio y campo
+COORDINACION,Coordinación de servicio,Levantamiento v3,
+INVENTARIO,Inventario y compras,Levantamiento v3,
+CONTABILIDAD,Contabilidad,Levantamiento v3,
+PROVEEDOR_EXT,Proveedor técnico externo (portal),Confirmado,"Acceso limitado, EXT-006"

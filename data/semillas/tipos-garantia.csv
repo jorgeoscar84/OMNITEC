@@ -1,0 +1,2 @@
+codigo,nombre,duracion,unidad,alcance,activacion,aplica_a,origen_garantia,condicion,fuente,estado
+REP_90D,Garantía de reparación,90,días,Mano de obra y repuestos sustituidos indicados en el reporte,Fecha de entrega,Servicio prestado,Interna,Reaparición del mismo síntoma o de la misma causa raíz,Anexo A (texto vigente en la aplicación actual),por_aprobar

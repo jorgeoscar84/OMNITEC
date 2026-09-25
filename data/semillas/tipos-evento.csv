@@ -1,0 +1,9 @@
+codigo,nombre,exige_tiempo_viaje,admite_preparacion,origen,fuente
+LLAMADA,Llamada,no,no,Confirmado,T2
+REUNION_PRESENCIAL,Reunión presencial,sí,sí,Confirmado,T2
+VIDEOLLAMADA,"Videollamada (Zoom, Google Meet)",no,no,Confirmado,T2
+VISITA_TECNICA,Visita técnica,sí,sí,Levantamiento v3,7.6
+VISITA_COMERCIAL,Visita comercial,sí,sí,Confirmado,T2
+TAREA_INTERNA,Tarea interna,no,no,Levantamiento v3,7.6
+VIAJE_INTERPROV,Viaje interprovincial,sí,sí,Confirmado,T2
+VENCIMIENTO,Recordatorio o vencimiento automático,no,no,Levantamiento v3,7.6

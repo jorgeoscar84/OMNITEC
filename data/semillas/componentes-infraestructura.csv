@@ -1,0 +1,13 @@
+codigo,nombre,origen,fuente
+REPETIDORA,Repetidora,Confirmado,T1
+DUPLEXOR,Duplexor,Confirmado,T1
+ANTENA,Antena,Confirmado,T1
+LINEA,"Línea, cables, conectores y arneses",Confirmado,T1
+FUENTE,Fuente de poder,Confirmado,T1
+UPS,UPS y baterías,Levantamiento v3,7.15
+VENTILACION,Ventilación,Levantamiento v3,7.15
+TORRE,Torre,Levantamiento v3,7.15
+CASETA,Caseta,Confirmado,T2
+GABINETE,Gabinete,Levantamiento v3,7.15
+SEGURIDAD,Elementos de seguridad,Levantamiento v3,7.15
+REGULADOR,Regulador de voltaje,Confirmado,Nota del cliente citada en v3

@@ -1,0 +1,7 @@
+codigo,nombre,disparador,antelacion,texto,fuente
+CUMPLEANOS,Felicitación de cumpleaños,Fecha de nacimiento del contacto,El mismo día,FALTA INFORMACIÓN (P-18),T2
+VENC_CONTRATO,Vencimiento de contrato,Fecha de caducidad del contrato,"30 días antes, en secuencia",FALTA INFORMACIÓN (P-18),T2
+POLIZA_ARCOTEL,Renovación de póliza ARCOTEL,Vencimiento de la póliza,"30 días antes, en secuencia",FALTA INFORMACIÓN (P-18),T2
+ESTUDIO_ING,Renovación de estudio de ingeniería,Caducidad del estudio,"30 días antes, en secuencia",FALTA INFORMACIÓN (P-18),T2
+MANT_ENTREGA,Recordatorio de mantenimiento,Entrega de equipos con mantenimiento o reparación,11 meses después (un mes antes del año),FALTA INFORMACIÓN (P-18),T2
+MANT_COMPRA,Recordatorio de mantenimiento por compra,Fecha de compra de equipos,11 meses después (un mes antes del año),FALTA INFORMACIÓN (P-18),T2

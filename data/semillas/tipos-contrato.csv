@@ -1,0 +1,13 @@
+codigo,nombre,codigo_padre,origen,fuente,estado
+RENTA_FREC,Renta de frecuencia,,Confirmado,T2,por_validar
+RENTA_FREC_TRAD,Renta de frecuencia tradicional,RENTA_FREC,Confirmado,T2,por_validar
+RENTA_FREC_DATOS,Renta de frecuencia de datos,RENTA_FREC,Confirmado,T2,por_validar
+RENTA_CASETA,Renta de caseta,,Confirmado,T2,por_validar
+RENTA_INFRA,Renta de infraestructura,,Confirmado,T2,por_validar
+RENTA_EQUIPOS,Renta de equipos,,Confirmado,T2,por_validar
+RENTA_EQUIPOS_POC,Renta de equipos POC,RENTA_EQUIPOS,Confirmado,T2,por_validar
+RENTA_EQUIPOS_TRAD,Renta de equipos tradicional,RENTA_EQUIPOS,Confirmado,T2,por_validar
+MIXTO,Contrato mixto,,Confirmado,T2,por_validar
+ESTUDIO_ING,Estudio de ingeniería,,Confirmado,T2,por_validar
+POLIZA_ARCOTEL,Póliza y trámite ARCOTEL,,Confirmado,T2,por_validar
+COMPRA_MANT,Compra y mantenimiento de equipos,,Confirmado,T2,por_validar

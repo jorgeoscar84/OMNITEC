@@ -1,0 +1,15 @@
+codigo,nombre,codigo_padre,origen,fuente
+CONTRATOS,Contratos,,Confirmado,T2
+CONTRATOS-FREC,Frecuencia,CONTRATOS,Confirmado,T2
+CONTRATOS-CASETA,Caseta,CONTRATOS,Confirmado,T2
+CONTRATOS-INFRA,Infraestructura,CONTRATOS,Confirmado,T2
+CONTRATOS-EQUIPOS,Equipos,CONTRATOS,Confirmado,T2
+CONTRATOS-MIXTOS,Mixtos,CONTRATOS,Confirmado,T2
+ESTUDIOS,Estudios de ingeniería,,Confirmado,T2
+ARCOTEL,ARCOTEL y certificados de frecuencia,,Confirmado,T2
+CERTIFICADOS,Certificados comerciales y de garantía,,Confirmado,T2
+PROFORMAS,Proformas y aprobaciones,,Levantamiento v3,7.9
+ACTAS,Actas de recepción y entrega,,Levantamiento v3,7.9
+INFORMES,Informes técnicos y de sitio,,Levantamiento v3,7.9
+FISCALES,"Documentos fiscales (enlaces, según permiso)",,Levantamiento v3,7.9
+EVIDENCIAS,Evidencias y fotografías,,Confirmado,T2

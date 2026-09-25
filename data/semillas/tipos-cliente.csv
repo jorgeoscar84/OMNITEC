@@ -1,0 +1,3 @@
+codigo,nombre,descripcion,origen,fuente,estado
+CLIENTE_FINAL,Cliente final,Recibe proforma con texto comercial persuasivo (COT-007),Confirmado,T1,por_validar
+DISTRIBUIDOR,Distribuidor,Recibe proforma solo con valores y garantía; lista de precios propia (CAT-008). FALTA INFORMACIÓN: CATEGORÍAS DE DISTRIBUIDOR,Confirmado,T1,por_validar

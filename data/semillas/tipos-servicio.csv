@@ -1,0 +1,10 @@
+codigo,nombre,descripcion,origen,fuente,estado
+DIAGNOSTICO,Diagnóstico,Revisión técnica que da lugar a la proforma técnica,Levantamiento v3,7.11,por_validar
+REPARACION,Reparación,Se dañó una pieza y se cambia o se repara,Confirmado,T1,por_validar
+CALIBRACION,Calibración,El equipo está bien; solo hay que calibrarlo,Confirmado,T1,por_validar
+AJUSTE,Ajuste,"Trabajo de ajuste, distinto de una reparación. FALTA INFORMACIÓN: ¿SE DISTINGUE DE CALIBRACIÓN?",Confirmado,T1,por_validar
+CONFECCION,Confección,"Fabricación de elementos, por ejemplo arneses",Confirmado,T1,por_validar
+MANTENIMIENTO,Mantenimiento,"Preventivo o correctivo, en laboratorio o en sitio",Confirmado,"T1, T2",por_validar
+INGENIERIA,Ingeniería e instalación,Diseño e instalación de sistemas,Levantamiento v3,7.11,por_validar
+ESTUDIO_ING,Estudio de ingeniería,Levantamiento de necesidades de comunicación de una empresa; tiene vigencia,Confirmado,"T1, T2",por_validar
+RENTA_RF,Renta de radiofrecuencia,Servicio de renta de frecuencia,Confirmado,T2,por_validar

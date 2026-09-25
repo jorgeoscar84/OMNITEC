@@ -1,0 +1,9 @@
+clave,valor,unidad,descripcion,fuente
+aviso_visita_local,2,horas,"Aviso antes de una visita en la ciudad, además del tiempo de viaje (CAL-005)",T2
+aviso_viaje_interprovincial,48,horas,"Aviso antes de un viaje interprovincial, además del tiempo de viaje (CAL-006)",T2
+antelacion_minima_renovacion,30,días,"Antelación mínima de las alertas de renovación (POST-004, FREQ-005)",T2
+recordatorio_mantenimiento,12,meses,Plazo desde la entrega o la compra hasta el mantenimiento sugerido (POST-006),T2
+zona_horaria,America/Guayaquil,,Zona horaria de Ecuador continental (CAL-012),v3
+moneda,USD,,Moneda de curso legal en Ecuador,Dato público
+plazo_maximo_reserva,FALTA INFORMACIÓN,días,Plazo máximo de una reserva de repuesto (INV-006),v3
+tarifas_iva,FALTA INFORMACIÓN,,En modo integrado se leen de UpConta; en modo autónomo se configuran (COT-013). No se fijan en código,v3

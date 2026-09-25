@@ -1,0 +1,11 @@
+codigo,nombre,origen,fuente
+FORM_WEB,Formulario web,Confirmado,"T1, T2"
+PAG_CAMPANA,Página de campaña,Levantamiento v3,7.3
+WHATSAPP,WhatsApp,Confirmado,T1
+CORREO,Correo o email marketing,Confirmado,T1
+REDES,Redes sociales,Confirmado,"T1, T2"
+CAMPANA,Campaña,Confirmado,T2
+WEBINAR,Webinar,Confirmado,T4
+IMPORTACION,Carga masiva por plantilla,Confirmado,T4
+DIRECTO,Creación directa por un usuario,Levantamiento v3,7.3
+REFERIDO,Referido,Levantamiento v3,7.3

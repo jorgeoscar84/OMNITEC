@@ -1,0 +1,13 @@
+pipeline,orden,etapa,tipo,origen,estado
+captacion,1,Nuevo,abierta,Levantamiento v3,por_validar
+captacion,2,Contacto inicial,abierta,Confirmado,por_validar
+captacion,3,Calificado,abierta,Levantamiento v3,por_validar
+captacion,4,Descubrimiento o visita,abierta,Levantamiento v3,por_validar
+captacion,5,Propuesta en preparación,abierta,Levantamiento v3,por_validar
+captacion,6,Proforma enviada,abierta,Confirmado,por_validar
+captacion,7,Negociación,abierta,Confirmado,por_validar
+captacion,8,Aprobación pendiente,abierta,Levantamiento v3,por_validar
+captacion,9,Ganado,cierre_ganado,Confirmado,por_validar
+captacion,10,Perdido,cierre_perdido,Confirmado,por_validar
+captacion,11,Pausado,pausa,Levantamiento v3,por_validar
+postventa,1,FALTA INFORMACIÓN: ETAPAS DEL PIPELINE DE POSTVENTA (D-13),abierta,,por_definir

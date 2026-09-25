@@ -1,0 +1,15 @@
+orden,estado,reloj,origen,estado_validacion
+1,Recibido por técnica,diagnóstico,Levantamiento v3,por_validar
+2,Triaje y asignación,diagnóstico,Levantamiento v3,por_validar
+3,Diagnóstico,diagnóstico,Confirmado,por_validar
+4,Propuesta técnica,diagnóstico,Confirmado,por_validar
+5,Esperando aprobación del cliente,espera del cliente,Confirmado,por_validar
+6,"Aprobado total, parcial o rechazado",transición,Levantamiento v3,por_validar
+7,Esperando stock o compra,espera de repuesto,Confirmado,por_validar
+8,Esperando proveedor externo,espera de proveedor,Confirmado,por_validar
+9,Listo para reparar,reparación,Levantamiento v3,por_validar
+10,En reparación o calibración,reparación,Confirmado,por_validar
+11,Control de calidad,control de calidad,Levantamiento v3,por_validar
+12,Listo para entrega,entrega,Levantamiento v3,por_validar
+13,Entregado y cerrado,fin,Confirmado,por_validar
+99,Baja técnica (no reparable o no rentable),fin,Observado,por_validar
