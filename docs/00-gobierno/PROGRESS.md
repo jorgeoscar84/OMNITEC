@@ -4,6 +4,42 @@ Memoria entre sesiones. Cada sesión agrega una entrada al principio: qué se hi
 
 ---
 
+## 2026-09-27 · Protocolos de integración y trabajo para agentes
+
+**Hecho**
+
+- Se creó `PROTOCOLO-UPCONTA.md`: integración con UpConta API v3 (11 módulos, flujos de creación cliente/producto/proforma/factura, patrones de deduplicación y sincronización, 8 restricciones de diseño con soluciones, 8 preguntas pendientes para UpConta, estructura backend/frontend).
+- Se creó `PROTOCOLO-AGENTES.md`: procedimientos detallados de trabajo para todas las fases, con secciones específicas para redacción de PRD (template de 17 secciones, ejemplos concretos de historias y criterios de aceptación), revisión cruzada, workflow GitHub (branching, staging, commit, push), definición de "hecho", escalada.
+- Se validó que ambos protocolos cubren todos los bloqueadores identificados en sesión anterior (DEC-007 autonomía funcional, D-02 custodia, D-11 proforma location, deduplicación sin guardia nativa, sincronización incremental, integración fallida).
+
+**Archivos creados/actualizados:**
+- `docs/00-gobierno/PROTOCOLO-UPCONTA.md` (11 secciones, 600+ líneas)
+- `docs/00-gobierno/PROTOCOLO-AGENTES.md` (10 secciones, 600+ líneas)
+- Commit: fe5b6b4 "Protocolos de integración y trabajo para agentes"
+
+**Falta información** (sigue siendo bloqueador)
+
+- **DECISIONES D-11, D-12, D-14:** Aún esperan aprobación (determinar dónde vive proforma, cuál ciclo va primero, alcance primer lanzamiento).
+- **INSUMOS P-01 a P-20:** Falta asignar responsables y fechas.
+- **LEVANTAMIENTO V4:** Pendiente revisión formal del cliente (sesión anterior identificó que está listo; requiere taller 1).
+
+**Necesito que decidas**
+
+1. **Aprobación de protocolos:** ¿Sirven los dos documentos como manual de trabajo para agentes? ¿Falta algo?
+2. **Siguiente paso:**  
+   - Opción A: Empieza PRD del módulo M01 (requisito previo: D-11, D-12, D-14 aprobados).
+   - Opción B: Revisar levantamiento v4 con cliente (taller 1), resolver D-11/D-12/D-14, luego empieza PRD.
+   - Opción C: Crear documentos adicionales (ej: Guide de creación de tests, template de arquitectura).
+
+**Recursos disponibles para próxima sesión**
+
+- `PROTOCOLO-UPCONTA.md`: Copia y pega a agentes que trabajen en integración con UpConta.
+- `PROTOCOLO-AGENTES.md`: Copia y pega a agentes que redacten PRD o código.
+- `AGENTS.md`: Ya incluye importación de reglas base (no innoventes, citar, un commit por tarea).
+- Rama de trabajo: `claude/confident-hawking-iajp0g` (lista para Pull Request o continuar).
+
+---
+
 ## 2026-09-25 · Levantamiento v4 y estructura del proyecto
 
 **Hecho**
