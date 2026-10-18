@@ -49,6 +49,7 @@ Las reglas que el cliente definió:
 | LAB-023 | Una orden con varios equipos permite clonar un equipo con sus líneas cambiando solo la serie, y reordenar los equipos. | Observado — app actual, oct 2026 | P2 |
 | LAB-024 | Cada equipo del documento técnico lleva un código QR que abre su resumen. | Observado — app actual, oct 2026 | P2 |
 | LAB-025 | El borrador de la orden se guarda automáticamente y se recupera si se cierra la ventana o se pierde la conexión. | Observado — app actual, oct 2026 | P1 |
+| LAB-026 | Las reglas de cobro de la orden son configurables por un rol autorizado: qué se cobra en garantía, qué se cobra en baja técnica (hoy, solo el diagnóstico) y qué estados de línea suman al total; cada documento emitido congela la regla vigente (DEC-022). | Confirmado — consultor, 18 oct 2026 | P1 |
 
 ## Indicadores del módulo
 

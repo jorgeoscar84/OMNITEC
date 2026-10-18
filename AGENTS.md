@@ -6,7 +6,7 @@ Trabajas en OMNITRONEC 360, la plataforma de CRM y servicio técnico de una empr
 
 ## Fase actual
 
-**Fase 0 · Levantamiento, en aprobación.** Siguiente: fase 1, PRD. Todavía no hay código ni stack aprobado: no crees código de la aplicación hasta que exista `docs/03-arquitectura/` aprobado. Las fases y sus compuertas están en `docs/00-gobierno/METODOLOGIA.md`.
+**Plan maestro, fase F0 (repositorio y entorno).** La base es DeskcommCRM v1.85.0 (DEC-020) en el repositorio privado `omnitronec-360` (DEC-023). Siguen F1 (arquitectura) y F2 (PRD de la oleada técnica). No se programa ningún módulo propio sin su PRD aprobado. El mapa completo está en `docs/00-gobierno/PLAN-MAESTRO.md`, y cómo se trabaja en `docs/00-gobierno/PROTOCOLO-DESARROLLO.md`.
 
 ## Reglas que nunca se rompen
 
@@ -31,7 +31,7 @@ Lo demás se lee bajo demanda. Las decisiones vigentes están en `docs/00-gobier
 
 | Ruta | Contenido |
 | --- | --- |
-| `docs/00-gobierno/` | Metodología, fuentes, decisiones (DEC) y diario de progreso |
+| `docs/00-gobierno/` | Metodología, fuentes, decisiones (DEC), diario de progreso, plan maestro, protocolo de desarrollo y evaluaciones |
 | `docs/01-levantamiento/` | Levantamiento v4: capítulos, `modulos/M01…M23`, pendientes (D, P, R), cobertura de transcripciones, índice de requisitos |
 | `docs/02-prd/` | PRD por módulo (fase 1): plantilla y plan de la fase |
 | `data/semillas/` | Plantillas CSV para cargar los catálogos (DEC-017) |
@@ -47,16 +47,16 @@ Lo demás se lee bajo demanda. Las decisiones vigentes están en `docs/00-gobier
 6. Actualiza `docs/00-gobierno/PROGRESS.md` con tres líneas: qué hiciste, qué falta, qué debe decidir el consultor.
 7. Un commit por módulo o por tarea, con mensaje en español que cite los identificadores.
 
-## Protocolo para trabajo con código (desde la fase 4)
+## Protocolo para trabajo con código
 
-Se activa cuando la arquitectura esté aprobada; los comandos exactos se agregarán aquí entonces.
+Manda [`docs/00-gobierno/PROTOCOLO-DESARROLLO.md`](docs/00-gobierno/PROTOCOLO-DESARROLLO.md): roles, el paso a paso de una tarea, ramas, revisión, controles y actualización desde el original. Además rigen el `AGENTS.md` y el `CLAUDE.md` del original. Resumen:
 
-1. Repite qué vas a hacer, qué requisitos cubre y qué archivos tocarás (máximo 5).
+1. Repite qué vas a hacer, qué requisitos cubre y qué archivos tocarás (una historia por tarea).
 2. Consulta la documentación vigente de cada librería antes de usar una función que no conozcas.
 3. Escribe primero la prueba que falla y luego el código que la hace pasar.
-4. Ejecuta la compuerta de verificación (tipos, estilo y pruebas). Debe terminar sin errores.
+4. Ejecuta la compuerta: `pnpm gov:verify`, más `pnpm test:db` si tocaste esquema y `pnpm test:e2e` si tocaste pantallas. Debe terminar sin errores.
 5. Si la tarea toca pantallas, recórrelas en el navegador y comprueba el flujo completo.
-6. Un commit por tarea: `[TAREA-nnn] descripción corta (IDs de requisitos)`.
+6. Un commit por tarea: `[T-nnn] descripción corta (IDs de requisitos)`, por PR hacia `main`, con revisión de otro rol.
 7. Marca la tarea como hecha y actualiza `PROGRESS.md`.
 
 ## Definición de hecho

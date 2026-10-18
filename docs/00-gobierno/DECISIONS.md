@@ -127,7 +127,7 @@ Las **decisiones abiertas del producto** (D-01 a D-14) y los **insumos pendiente
 
 ## DEC-019 · Orden de los ciclos del primer lanzamiento
 
-- **Estado:** Propuesta · la decisión es del cliente (D-12)
+- **Estado:** Reemplazada por DEC-025 (18 oct 2026)
 - **Recomendación:** Ciclo comercial (fase 2) antes que el técnico (fase 3). La aplicación técnica actual sigue operando mientras tanto; el área comercial hoy no tiene ninguna herramienta. Invertir el orden es posible sin rehacer nada.
 
 ## DEC-020 · Base de partida: copia propia de DeskcommCRM
@@ -144,3 +144,34 @@ Las **decisiones abiertas del producto** (D-01 a D-14) y los **insumos pendiente
 - **Decisión:** Un usuario puede tener varios roles a la vez, y sus permisos efectivos son la suma de los roles asignados. Los roles base de IAM-004 son plantillas de permisos; un administrador puede además activar o quitar capacidades sueltas por usuario (por ejemplo «recepción de equipos» y «facturación» en la misma persona), siempre dentro del modelo por acción, entidad, alcance y condición de IAM-005, con el acceso económico separado (IAM-006) y con auditoría y motivo en todo cambio (IAM-007).
 - **Motivo:** En la práctica una misma persona cubre funciones de varias áreas: quien recibe equipos también lleva facturación y temas contables. Un rol único obligaría a crear un rol a la medida por persona.
 - **Consecuencia:** Agranda la brecha con DeskcommCRM, que asigna un solo rol por organización ordenado por rango (DEC-020, sección 4 de la evaluación). El modelo de permisos se diseña antes de la parte técnica.
+
+## DEC-022 · Reglas de cobro y plazos de garantía configurables
+
+- **Estado:** Aceptada · decidida por el consultor (18 oct 2026)
+- **Decisión:** Ningún plazo de garantía ni regla de cobro se fija en el código. Las garantías se configuran con plazo, unidad (días calendario, días laborables, meses, años) y alcance (GAR-001, GAR-014). Las reglas de cobro de la orden (qué se cobra en garantía, en baja técnica y qué estados de línea suman) también se configuran (LAB-026). Cada documento emitido congela la regla vigente.
+- **Valores iniciales:** 60 días laborables en repuestos instalados (aplicación actual) y 90 días en reparación (GAR-013), cargados como semillas en `data/semillas/tipos-garantia.csv` y pendientes de confirmación del área técnica (P-22).
+
+## DEC-023 · Repositorio de código propio, privado, que sigue al original por versión
+
+- **Estado:** Aceptada · consultor (18 oct 2026)
+- **Decisión:** El producto vive en un repositorio privado nuevo, `omnitronec-360`, creado desde DeskcommCRM v1.85.0 con su historia completa. El original queda como remoto `upstream`, de solo lectura (el envío está bloqueado), y se incorpora por etiqueta publicada con *merge*, nunca con *rebase* ni desde su `main`. La especificación de este repositorio se traslada a `omnitronec-360/omnitronec/` conservando su historia.
+- **Motivo:** Un *fork* de GitHub de un repositorio público no puede ser privado, y el proyecto maneja información confidencial (DEC-004). Seguir por versión publicada da actualizaciones probadas sin la inestabilidad de unos 200 cambios diarios.
+- **Detalle:** [PROTOCOLO-DESARROLLO.md](PROTOCOLO-DESARROLLO.md), secciones 1, 2 y 9.
+
+## DEC-024 · Capa propia separada del núcleo, incluido el esquema
+
+- **Estado:** Propuesta · se ratifica en la fase F1 (arquitectura)
+- **Decisión:** El código propio vive en archivos y carpetas nuevos (`omnitronec/`, `lib/omx/`, `app/app/omx/`, `tests/omx/`). Las migraciones propias usan el rango reservado 9000–9999 con `omx` en el nombre, y su apéndice idempotente va en `supabase/omnitronec/baseline-omx.sql`, que nuestro despliegue aplica después del `baseline.sql` del original. Cada modificación del núcleo se registra en `omnitronec/NUCLEO-MODIFICADO.md`.
+- **Motivo:** El propio original midió en sus 1.029 copias públicas que el costo real de mantener una copia es el trabajo de *merge* y la renumeración de migraciones (su ADR-0005). Separar la capa reduce los conflictos de cada actualización a la lista del registro.
+
+## DEC-025 · El ciclo técnico va primero
+
+- **Estado:** Aceptada por el consultor (18 oct 2026) · informar al cliente (D-12)
+- **Decisión:** El primer lanzamiento construye la base compartida (T0) y la paridad técnica (T1) sobre DeskcommCRM. Lo comercial arranca con lo que la base ya trae y se completa en la fase F7.
+- **Motivo:** La base ya resuelve buena parte de lo comercial (DEC-020, evaluación de cobertura), mientras que lo técnico no existe en ella y el área técnica depende hoy de una aplicación frágil.
+- **Reemplaza:** la recomendación de DEC-019.
+
+## DEC-026 · Automatización externa con n8n por la API de la plataforma
+
+- **Estado:** Propuesta · se diseña en F1 y se construye en F8
+- **Decisión:** n8n se conecta por la API `/api/v1` con tokens de servicio (IAM-011), los webhooks de entrada y los webhooks de salida firmados del original, que traen un identificador de entrega para deduplicar. Ningún módulo depende de n8n para funcionar (DEC-007): n8n solo automatiza.

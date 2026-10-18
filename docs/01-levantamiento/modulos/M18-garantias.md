@@ -50,6 +50,7 @@ Cuando OMNITRONEC compró un equipo a un proveedor, o le encargó una reparació
 | GAR-011 | Al emitirse, el documento congela el texto y el plazo de la garantía vigente en ese momento. | Propuesto | P0 |
 | GAR-012 | Panel de garantías próximas a vencer, por cliente y por proveedor. | Propuesto | P2 |
 | GAR-013 | La política vigente observada —90 días desde la entrega, sobre mano de obra y repuestos sustituidos, ante reaparición del mismo síntoma o causa raíz— se carga como garantía por defecto del servicio de reparación, sujeta a aprobación formal. | Observado | P1 |
+| GAR-014 | El plazo de cada garantía se configura con su unidad —días calendario, días laborables, meses o años— y su alcance —mano de obra, repuestos instalados o ambos—; la plataforma no fija ningún plazo en el código (DEC-022). | Confirmado — consultor, 18 oct 2026 | P1 |
 
 ## Pendientes
 

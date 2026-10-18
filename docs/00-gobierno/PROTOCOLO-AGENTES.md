@@ -1,5 +1,8 @@
 # Protocolo de trabajo para agentes · OMNITRONEC 360
 
+> **⚠ AVISO (18 oct 2026):** Para la construcción manda [`PROTOCOLO-DESARROLLO.md`](PROTOCOLO-DESARROLLO.md). Este documento sigue sirviendo como guía de redacción del PRD, pero sus ejemplos son ilustrativos: algunos identificadores (CLI-009, IAM-003 y otros) no corresponden a los requisitos reales. Verifica siempre el identificador en `docs/01-levantamiento/indice-requisitos.csv`.
+
+
 **Versión:** 1.0 · **Fecha:** 2026-09-27 · **Audiencia:** Agentes de IA y desarrolladores humanos
 
 ---

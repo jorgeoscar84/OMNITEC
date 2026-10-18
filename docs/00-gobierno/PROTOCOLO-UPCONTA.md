@@ -1,6 +1,9 @@
 # Protocolo de integración · UpConta API v3
 
-**Estado:** Aprobado (DEC-007) · **Versión:** 1.0 · **Fecha:** 2026-09-27 · **Fuente:** UpConta API docs v3 (convertidas 2026-09-27)
+> **⚠ AVISO (18 oct 2026): BORRADOR NO VERIFICADO.** Este documento se escribió en la sesión del 27 sep y contiene suposiciones que la documentación de UpConta no respalda (por ejemplo, un endpoint para emitir una factura desde un borrador, o un campo `reference` para deduplicar). No es fuente de verdad. Mandan la documentación oficial de UpConta y el capítulo 07 del levantamiento. Se reescribe en la fase de arquitectura de la integración (plan maestro, etapa I1).
+
+
+**Estado:** Borrador no verificado · **Versión:** 1.0 · **Fecha:** 2026-09-27 · **Fuente:** UpConta API docs v3 (convertidas 2026-09-27)
 
 ---
 
