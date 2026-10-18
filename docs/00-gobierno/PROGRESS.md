@@ -4,6 +4,27 @@ Memoria entre sesiones. Cada sesión agrega una entrada al principio: qué se hi
 
 ---
 
+## 2026-10-18 (noche) · Plan maestro, protocolo y repositorio de código
+
+**Hecho**
+
+- Decisión del consultor: plazos de garantía y reglas de cobro configurables (DEC-022, GAR-014, LAB-026); semilla de 60 días laborables en repuestos agregada junto a la de 90 días en reparación.
+- Plan maestro F0 a F8 con compuertas (`PLAN-MAESTRO.md`) y protocolo de desarrollo con roles, tarea paso a paso, revisión, CI y actualización desde el original (`PROTOCOLO-DESARROLLO.md`).
+- Decisiones DEC-023 (repositorio privado que sigue al original por versión), DEC-024 (capa propia y esquema separados), DEC-025 (ciclo técnico primero; reemplaza DEC-019) y DEC-026 (n8n por API y webhooks).
+- Copia local de DeskcommCRM v1.85.0 con historia completa y envío al original bloqueado. Esta especificación ya se trasladó a `omnitronec/` en la rama `omx/T-001-capa-base`, junto con agentes `omx-programador`, `omx-revisor` y `omx-qa`, el registro de modificaciones al núcleo y el control `omx.yml`.
+- Aviso de borrador no verificado en `PROTOCOLO-UPCONTA.md` (tenía suposiciones sin respaldo en la documentación de UpConta) y en los ejemplos de `PROTOCOLO-AGENTES.md`.
+
+**No se pudo hacer**
+
+- Crear el repositorio `omnitronec-360` en GitHub: la integración no tiene permiso para crear repositorios. Lo crea el consultor (F0.2).
+
+**Necesito que decidas**
+
+1. Crear el repositorio privado vacío `omnitronec-360` y conectarlo a la sesión.
+2. Revisar `PLAN-MAESTRO.md` y aprobar el arranque de F1 (arquitectura).
+
+---
+
 ## 2026-10-18 (tarde) · Revisión de la aplicación técnica actual y plan del área técnica
 
 **Hecho**
