@@ -43,6 +43,12 @@ Las reglas que el cliente definió:
 | LAB-017 | Una misma orden soporta reparación interna y derivación externa. | Confirmado | P1 |
 | LAB-018 | La baja técnica se registra con su motivo —no reparable o no rentable— y admite baja parcial de algunos equipos dentro de una misma orden. | Observado | P1 |
 | LAB-019 | Cuando un repuesto no está en almacén se registra la solicitud al proveedor o *dealer* con su fecha, para medir la espera de repuesto por separado. | Confirmado — T1 · nuevo v4 | P1 |
+| LAB-020 | Cada línea de servicio o repuesto lleva su estado de aprobación —aprobado, no aprobado o recomendado—; solo las aprobadas suman al total y las no aprobadas se muestran tachadas en el documento. | Observado — app actual, oct 2026 | P1 |
+| LAB-021 | Al registrar una serie, el sistema avisa si ya existe en otro equipo de la misma orden o en otra orden, e indica cuál. | Observado — app actual, oct 2026 | P1 |
+| LAB-022 | Biblioteca administrable de frases de diagnóstico por pieza o servicio: al agregar el repuesto, la observación del equipo se arma con la frase correspondiente y el técnico puede editarla. | Observado — app actual, oct 2026 | P1 |
+| LAB-023 | Una orden con varios equipos permite clonar un equipo con sus líneas cambiando solo la serie, y reordenar los equipos. | Observado — app actual, oct 2026 | P2 |
+| LAB-024 | Cada equipo del documento técnico lleva un código QR que abre su resumen. | Observado — app actual, oct 2026 | P2 |
+| LAB-025 | El borrador de la orden se guarda automáticamente y se recupera si se cierra la ventana o se pierde la conexión. | Observado — app actual, oct 2026 | P1 |
 
 ## Indicadores del módulo
 

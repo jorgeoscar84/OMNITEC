@@ -4,6 +4,28 @@ Memoria entre sesiones. Cada sesión agrega una entrada al principio: qué se hi
 
 ---
 
+## 2026-10-18 (tarde) · Revisión de la aplicación técnica actual y plan del área técnica
+
+**Hecho**
+
+- Se leyó el código público de la aplicación técnica actual (13 pantallas, sus campos, estados, reglas de cobro y PDF), sin iniciar sesión ni tocar datos. El inventario detallado quedó en `confidencial/app-actual/` (fuera de git).
+- Se agregaron 18 requisitos con origen «Observado — app actual» (IAM-014, LAB-020 a 025, CAM-015 y 016, COT-020 y 021, CAT-016, FREQ-012, INC-012 y 013, BI-016 y 017, IA-021). Total: 357.
+- Se registró DEC-021 (varios roles por usuario) y los pendientes P-21 (exportación de datos) y P-22 (validar reglas y plazo de garantía).
+- Plan del área técnica por etapas en `docs/00-gobierno/evaluaciones/PLAN-AREA-TECNICA.md`: T0 base compartida, T1 paridad mejorada, T2 custodia y garantías, T3 operación completa.
+
+**Falta información**
+
+- EXPORTACIÓN DE LOS DATOS ACTUALES (P-21) Y VALIDACIÓN DE REGLAS CON EL ÁREA TÉCNICA (P-22).
+- RECORRIDO CON SESIÓN INICIADA: LA RED DEL ENTORNO BLOQUEA EL DOMINIO DE LA APLICACIÓN.
+
+**Necesito que decidas**
+
+1. Aprobar el orden de etapas T0 → T1 → T2 → T3.
+2. Pedir al área técnica la exportación de datos y la validación de P-22.
+3. Cambiar la contraseña de la cuenta compartida en el chat.
+
+---
+
 ## 2026-10-18 · Evaluación de DeskcommCRM como base
 
 **Hecho**

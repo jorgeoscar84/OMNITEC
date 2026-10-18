@@ -54,6 +54,8 @@ Además, cada componente instalado:
 | CAM-012 | La herramienta de cálculo de arneses guarda su resultado asociado a un sitio o a una orden. | Observado + propuesto | P2 |
 | CAM-013 | Modo sin conexión para listas de verificación, fotografías, mediciones y firma. | Propuesto | P1 |
 | CAM-014 | Historial por activo: mantenimientos, incidencias, cambios y mediciones. | Propuesto | P1 |
+| CAM-015 | Informe de mantenimiento en sitio para un cliente con varias ubicaciones —fincas o sucursales—, cada una con su fecha, sus equipos, repuestos, subtotal e impuesto, más un total general. | Observado — app actual, oct 2026 | P1 |
+| CAM-016 | Mapa de repetidoras con ubicación, banda, frecuencias, modelo, altura y radio de cobertura aproximado (CAM-011), con herramienta para medir distancias entre puntos. | Observado — app actual, oct 2026 | P1 |
 
 > **Contexto de adopción.** El módulo de infraestructura actual contiene cinco repetidoras, una de ellas de prueba, mientras el parque instalado supera los 660 canales en 227 clientes. El problema no es que falte la funcionalidad: es que no se usa. La nueva plataforma debe reducir a lo mínimo el esfuerzo de registrar un sitio, o repetirá el mismo resultado.
 

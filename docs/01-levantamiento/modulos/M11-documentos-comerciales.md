@@ -65,6 +65,8 @@ Esto exige una lógica de guardado propia: la proforma se comporta como una plan
 | COT-017 | La proforma lleva la identidad de marca de OMNITRONEC: presentación cuidada y profesional, sin convertirse en pieza publicitaria. | Confirmado — T1, T3 · nuevo v4 | P1 |
 | COT-018 | **Generador de catálogo de productos**: a partir del catálogo existente —descripciones, imágenes y fichas— el usuario elige productos o categorías y la lista de precios del cliente, y obtiene un PDF con la plantilla de marca. | Confirmado — T1 · nuevo v4 | P2 |
 | COT-019 | La proforma técnica admite mano de obra calculada por cantidad de equipos y descuentos específicos para un cliente, con su motivo. | Confirmado — T1 · nuevo v4 | P1 |
+| COT-020 | El documento técnico se emite en varios formatos desde los mismos datos: consolidado, separado (mano de obra, repuestos y combinado), solo mano de obra, solo repuestos, solo inventario de equipos y solo resumen; por ubicación o de todas a la vez. | Observado — app actual, oct 2026 | P1 |
+| COT-021 | El mantenimiento en sitio puede emitirse como informe técnico o como proforma a partir de los mismos datos. | Observado — app actual, oct 2026 | P1 |
 
 > **Brecha observada.** En la aplicación actual el número de informe se sugiere consultando el último registro, de modo que dos usuarios pueden recibir el mismo número. Además el documento emitido declara “IVA 15 %” como texto fijo. Ambas cosas deben resolverse en el servidor.
 

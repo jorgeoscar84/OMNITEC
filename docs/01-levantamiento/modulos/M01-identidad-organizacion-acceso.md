@@ -31,6 +31,7 @@
 | IAM-011 | Las integraciones usan identidades de servicio, nunca cuentas de personas. | Propuesto | P0 |
 | IAM-012 | Cierre de sesión por inactividad configurable, con aviso previo y sincronización entre pestañas. | Observado | P2 |
 | IAM-013 | Recuperación de contraseña, hoy inexistente en la aplicación actual. | Observado — brecha | P1 |
+| IAM-014 | Un usuario puede tener varios roles a la vez y sus permisos efectivos son la suma de ellos; además, un administrador puede activar o quitar capacidades sueltas por usuario —por ejemplo recepción de equipos y facturación en la misma persona— con auditoría y motivo (DEC-021). | Confirmado — consultor, 18 oct 2026 | P1 |
 
 ## Recomendaciones
 

@@ -38,6 +38,7 @@ El plan de frecuencias es un **módulo propio de primer nivel**, ligado simultá
 | FREQ-009 | Historial de cambios del plan, con responsable, fecha y motivo. | Propuesto | P1 |
 | FREQ-010 | La migración debe fusionar los registros que hoy representan sitios como si fueran clientes distintos. | Observado — brecha | P0 |
 | FREQ-011 | La vigencia de cada póliza ARCOTEL se configura por póliza —anual o plurianual, hasta cinco años—, porque muchos clientes la renuevan cada año aunque podrían hacerlo por cinco. | Confirmado — T2 · nuevo v4 | P1 |
+| FREQ-012 | Los datos de acceso de cada repetidora —dirección y credenciales— se guardan cifrados y solo los ve un rol autorizado. | Propuesto | P0 |
 
 > **Brecha crítica para la migración.** En el módulo actual los sitios están registrados como clientes independientes. Un mismo cliente aparece tantas veces como sitios tiene: un cliente ocupa siete registros, otro cinco, otro cuatro y otro tres. Ahí está la explicación de que el maestro tenga 823 clientes y este módulo solo 227. La fusión propuesta se detalla en el paquete de datos extraídos.
 

@@ -82,6 +82,8 @@ La columna **Bloquea** dice qué se detiene si el insumo no llega. Los responsab
 | P-18 | TEXTOS DE LOS MENSAJES PREDETERMINADOS *(nuevo v4)* | Comercial y marketing | M07, M23 | La puesta en producción de automatizaciones |
 | P-19 | CONTENIDO INICIAL DE SPEECH, PUNTOS FUERTES Y OBJECIONES *(nuevo v4)* | Jefatura comercial | M09 | La puesta en producción de M09 |
 | P-20 | FORMATO DE LA PROFORMA COMERCIAL, CON TRANSPORTE Y LOGÍSTICA *(nuevo v4)* | José (T2 y T3) | M11 | La plantilla de proforma (fase 2) |
+| P-21 | EXPORTACIÓN COMPLETA DE LOS DATOS DE LA APLICACIÓN TÉCNICA ACTUAL (INFORMES, MANTENIMIENTOS EN SITIO, INCIDENCIAS, FRECUENCIAS, REPETIDORAS, PRECIOS, CLIENTES Y FOTOS) *(nuevo, 18 oct 2026)* | Área técnica | M13–M19 | La migración de la etapa T1 del plan técnico |
+| P-22 | VALIDAR CON EL ÁREA TÉCNICA LAS REGLAS OBSERVADAS EN LA APLICACIÓN ACTUAL: COBRO EN GARANTÍA Y EN BAJA TÉCNICA, ESTADOS DE APROBACIÓN POR LÍNEA, GARANTÍA DE 60 DÍAS LABORABLES EN REPUESTOS FRENTE A LOS 90 DÍAS DE GAR-013 *(nuevo, 18 oct 2026)* | Área técnica | M14, M18 | El PRD de M14 y M18 |
 
 ### 16.2 Qué bloquea el PRD y qué no *(reescrita en la v4)*
 

@@ -88,6 +88,7 @@ Dos límites que este levantamiento añade y que el PRD debe respetar: el agente
 | IA-018 | Un fallo del proveedor de IA no bloquea ningún flujo manual. | Propuesto | P1 |
 | IA-019 | Agente de campañas: propone secuencias y textos según el tipo de campaña, con la misma política de borrador y aprobación humana. | Confirmado — T2 · nuevo v4 | P2 |
 | IA-020 | El análisis de la evolución de las proformas —primera frente a final— propone los factores que llevaron al cierre, como sugerencia para la habilitación comercial. | Confirmado — T3 · nuevo v4 | P3 |
+| IA-021 | Acción «Mejorar texto» en diagnóstico, descripción, acciones y próximos pasos: reescribe con lenguaje técnico sin cambiar hechos (IA-004) y devuelve un borrador que el técnico acepta (IA-005). | Observado — app actual, oct 2026 | P1 |
 
 ## Speech y objeciones: quién manda
 

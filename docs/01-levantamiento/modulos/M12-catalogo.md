@@ -57,6 +57,7 @@ Esta taxonomía es una **semilla**, no el catálogo definitivo. El principio que
 | CAT-013 | Ningún elemento del catálogo global puede llevar el nombre de un cliente concreto. | Observado — brecha | P1 |
 | CAT-014 | La estructura de categorías macro y micro de todos los equipos atendidos —radiocomunicación, impresoras, controles de acceso y demás— se entrega como plantilla semilla y el cliente la valida antes de cargarla. | Confirmado — T1 · nuevo v4 | P1 |
 | CAT-015 | Productos y repuestos registran por separado su costo y su precio de venta al cliente final; el costo solo es visible con permiso. | Confirmado — T1 · nuevo v4 | P1 |
+| CAT-016 | Lista de precios de repuestos por marca y modelo, editable en línea, cuyo precio se propone automáticamente al agregar el repuesto a un equipo de ese modelo (relación por identificador, CAT-005). | Observado — app actual, oct 2026 | P1 |
 
 > **Brechas observadas en el catálogo actual.** El catálogo de repuestos rápidos del informe incluye el elemento BATERÍA TIA, que corresponde a un cliente específico y no a una pieza genérica. La misma pieza figura como Carry Holder (Clip) en el formulario y como Harry Holder (Clip) en el catálogo de precios. Y de las 228 piezas que el sistema declara, solo 218 son visibles: **hay 2 modelos y 10 piezas sin marca asignada**, invisibles bajo ambas pestañas.
 

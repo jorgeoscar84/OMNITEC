@@ -32,6 +32,8 @@
 | BI-013 | Los umbrales de SLA son configurables por contrato y tipo de servicio, no fijos. | Observado — brecha | P1 |
 | BI-014 | Reporte diario y semanal por técnico: equipos revisados, reparados, proformas técnicas emitidas y aprobadas, desglosado por cliente y por equipo. | Confirmado — T1 · nuevo v4 | P1 |
 | BI-015 | Valor producido por cada colaborador técnico frente a su costo en el periodo, visible solo para roles autorizados y sujeto a la decisión D-10. | Confirmado — T1 · nuevo v4 | P2 |
+| BI-016 | Panel técnico de inicio: ingresos del mes, pendientes urgentes por antigüedad, tasa de aprobación, ticket promedio, producción por técnico y principales clientes. | Observado — app actual, oct 2026 | P1 |
+| BI-017 | Estadísticas técnicas: modelos que más ingresan, repuestos de mayor rotación, modelos con más repuestos cambiados, informes por técnico, ingresos frente a equipos por modelo y tiempo promedio de aprobación por cliente, exportables a hoja de cálculo. | Observado — app actual, oct 2026 | P1 |
 
 > **Por qué el SLA actual no sirve.** Hoy el sistema mide la diferencia entre la creación del informe y su aprobación, y clasifica con umbrales fijos de 5 y 12 días. El resultado es que **todos los clientes aparecen como** **“lento”**, con promedios de entre 12 y 46 días. La medición no distingue si la demora fue del técnico, del cliente que tardó en aprobar o del proveedor de repuestos. Un indicador que califica mal a todos por igual no informa ninguna decisión. De ahí la exigencia de relojes separados en el módulo de laboratorio.
 

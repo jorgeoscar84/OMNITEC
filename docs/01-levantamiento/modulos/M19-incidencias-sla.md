@@ -25,5 +25,7 @@
 | INC-009 | Análisis de causa raíz formal para severidad crítica o para recurrencias. | Propuesto | P2 |
 | INC-010 | El tiempo fuera de servicio y la disponibilidad se calculan desde eventos consistentes. | Observado + propuesto | P1 |
 | INC-011 | Detección de recurrencia por sitio, activo y síntoma. | Propuesto | P2 |
+| INC-012 | Las evidencias fotográficas de la incidencia llevan descripción y se incluyen en el reporte PDF. | Observado — app actual, oct 2026 | P1 |
+| INC-013 | Avisos de calidad del registro: lenguaje de diagnóstico escrito en «acciones tomadas», o daño físico descrito sin fotografía antes del cierre. | Observado — app actual, oct 2026 | P2 |
 
 > **Estado actual.** El módulo contiene tres tickets, todos de un mismo cliente y todos cerrados. El estado se cambia desde un desplegable en la propia lista, con efecto inmediato y sin pedir motivo. El sitio se escribe como texto libre pese a existir un catálogo de repetidoras.
