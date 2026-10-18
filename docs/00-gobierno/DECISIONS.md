@@ -129,3 +129,11 @@ Las **decisiones abiertas del producto** (D-01 a D-14) y los **insumos pendiente
 
 - **Estado:** Propuesta · la decisión es del cliente (D-12)
 - **Recomendación:** Ciclo comercial (fase 2) antes que el técnico (fase 3). La aplicación técnica actual sigue operando mientras tanto; el área comercial hoy no tiene ninguna herramienta. Invertir el orden es posible sin rehacer nada.
+
+## DEC-020 · Base de partida: copia propia de DeskcommCRM
+
+- **Estado:** Propuesta · el consultor aceptó construir sobre esta base (18 oct 2026); se ratifica en la fase de arquitectura
+- **Decisión:** OMNITRONEC 360 parte de una copia propia y privada del repositorio original de DeskcommCRM (licencia MIT), actualizada por versión publicada. No se usa la copia atiendo-crm. La parte técnica (M13 a M20) y el conector de UpConta se construyen como módulos con tablas propias, por el camino de módulos del original (sus ADR-0002 y ADR-0005).
+- **Motivo:** Licencia sin obligaciones de publicar ni funciones de pago; tecnología moderna; ya cubre total o parcialmente el 49 % de los requisitos, el 69 % de los comerciales (M01–M12). El original tiene más español que atiendo-crm y sigue activo; la copia quedó congelada en septiembre y su numeración de cambios de base de datos choca con la del original. Detalle en [`evaluaciones/EVALUACION-BASE-DESKCOMM.md`](evaluaciones/EVALUACION-BASE-DESKCOMM.md).
+- **Reemplaza en parte:** DEC-011 (autenticación y cola de trabajos pasan a ser las del original). **Ajusta:** DEC-012 (se desactiva WAHA; WhatsApp por la API oficial o Zernio). **Queda abierto:** DEC-010 (el original genera PDF con componentes compilados; las plantillas editables de COT-001 e IA-010 siguen siendo requisito).
+- **Condición:** Antes del primer módulo técnico, la instalación en el VPS debe demostrar instalación y actualización sin pérdida de datos, interfaz en español, un mensaje real por canal oficial y un módulo de prueba con tabla propia.

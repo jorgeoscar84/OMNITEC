@@ -4,6 +4,27 @@ Memoria entre sesiones. Cada sesión agrega una entrada al principio: qué se hi
 
 ---
 
+## 2026-10-18 · Evaluación de DeskcommCRM como base
+
+**Hecho**
+
+- Se comparó atiendo-crm con su original, DeskcommCRM. Se recomienda el original: más español (7.945 textos contra 6.256), proformas, empresas y plataforma de módulos, y sigue activo. La copia quedó en septiembre y su numeración de base de datos choca con la del original.
+- Se clasificaron los 339 requisitos contra el código del original: 46 los trae, 118 en parte y 175 no. La parte técnica (M13–M20) y UpConta se construyen casi completas.
+- Se registró DEC-020 (propuesta) y la evaluación en `docs/00-gobierno/evaluaciones/`.
+
+**Falta información**
+
+- ADAPTACIÓN A ECUADOR (RUC, CÉDULA, LOPDP, IMPUESTOS) Y MODELO DE PERMISOS: SU ALCANCE SE FIJA EN EL PRD DE M01 Y M02.
+- DEC-010 (PLANTILLAS DE PDF EDITABLES) QUEDA ABIERTA FRENTE A LO QUE TRAE EL ORIGINAL.
+
+**Necesito que decidas**
+
+1. Confirmar el original DeskcommCRM como base (DEC-020) y crear la copia privada bajo la cuenta del proyecto.
+2. Aceptar que la primera instalación en el VPS sea la prueba (sección 7 de la evaluación).
+3. Las decisiones del cliente D-11, D-12 y D-14 siguen pendientes.
+
+---
+
 ## 2026-09-27 · Protocolos de integración y trabajo para agentes
 
 **Hecho**

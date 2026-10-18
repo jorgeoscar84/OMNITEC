@@ -1,0 +1,340 @@
+id,modulo,prioridad,estado,evidencia_en_deskcomm,requisito
+ADM-001,M23,P1,Parcial,Catálogos editables en configuración,"Todo catálogo extensible ofrece la acción de agregar, con el permiso y el gobierno apropiados."
+ADM-002,M23,P1,Parcial,Importación por lotes en algunos catálogos,Todo catálogo admite plantilla de importación y exportación para carga masiva.
+ADM-003,M23,P0,Parcial,Borrador y publicación para agentes de IA,"Los cambios críticos se versionan, se prueban y se publican. No se guardan por perder el foco de un campo."
+ADM-004,M23,P0,Parcial,Contactos se anonimizan o fusionan en lugar de borrarse,Los maestros referenciados no se borran: se desactivan y conservan su historial.
+ADM-005,M23,P1,Lo trae,"Reglas de automatización con disparador, condición y acción","Las automatizaciones se definen con disparador, condiciones, acciones, horario, límites y propietario."
+ADM-006,M23,P0,Parcial,Registro de ejecución (automation_rule_runs); sin simulación,"Toda automatización ofrece simulación, prueba, pausa y registro de ejecución."
+ADM-007,M23,P0,Lo trae,Secretos cifrados con AES y nunca mostrados,"Los secretos se cifran, se rotan y nunca se muestran completos."
+ADM-008,M23,P0,Parcial,Auditoría de solo agregado en la API,"Auditoría de solo agregado sobre datos, permisos, documentos, precios, estados y exportaciones."
+ADM-009,M23,P0,Lo trae,La interfaz solo actualiza con respaldo previo; la restauración no está en la pantalla diaria,La restauración de respaldos no se ejecuta desde la interfaz de uso diario.
+ADM-010,M23,P0,No lo trae,Sin restauración en entorno aislado con doble aprobación,"La restauración usa entorno aislado, simulación, respaldo previo, doble aprobación y plan de reversión."
+ADM-011,M23,P1,Parcial,Salud de canales y de integraciones de mensajería,"Las integraciones exponen su estado, última sincronización, errores y reintentos."
+ADM-012,M23,P1,Parcial,Borrador y publicación en agentes,"La configuración distingue borrador, publicada, retirada y versión efectiva."
+ADM-013,M23,P1,Lo trae,"Marca blanca desde la pantalla: nombre, colores, logotipo e ícono","Identidad corporativa central —logotipo, colores y datos de la empresa— que se aplica a documentos, plantillas y campañas sin repetir la configuración."
+ADM-014,M23,P1,Parcial,Semillas por nicho; faltan las nuestras,"Los catálogos se entregan vacíos en el producto y se cargan con plantillas semilla preparadas desde este levantamiento; tras la carga, todo es editable, desactivable y ampliable."
+API-001,INT,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Toda entidad compartida guarda el identificador de UpConta como referencia externa estable.
+API-002,INT,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Las tarifas de impuesto se obtienen del catálogo de opciones y se congelan en el documento emitido.
+API-003,INT,P0,Parcial,Ayudante de idempotencia reutilizable (lib/api/idempotency.ts),La creación de factura usa clave de idempotencia: un reintento nunca produce dos comprobantes.
+API-004,INT,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Los estados del comprobante se reflejan en la ficha del cliente y en la oportunidad.
+API-005,INT,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"El modo sin conexión del SRI y sus reintentos automáticos se muestran al usuario, sin bloquear el flujo comercial."
+API-006,INT,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La sincronización periódica conserva la fecha de última conciliación por entidad.
+API-007,INT,P0,Parcial,Patrón event_log + workers para excepciones,Todo error crea una excepción visible y accionable; nunca una inconsistencia silenciosa.
+API-008,INT,P0,Parcial,Patrón de cifrado de credenciales,"Las credenciales se guardan cifradas, son rotables y nunca llegan al navegador."
+API-009,INT,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La integración se desarrolla y se prueba contra el ambiente de pruebas antes de tocar producción.
+API-010,INT,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Toda función que dependa de UpConta define su comportamiento cuando la integración no responde.
+API-011,INT,P1,Parcial,Patrón de panel de salud de canales,"Panel de salud de la integración con estado, última sincronización, errores y reintentos."
+BI-001,M21,P1,Parcial,Filtros por fecha y responsable; sin sede ni equipo,"Filtros por rango libre de fechas, día, semana, mes, trimestre, año, sede, equipo y responsable."
+BI-002,M21,P0,No lo trae,Sin ficha de indicador,"Cada indicador define fórmula, fuente, zona horaria, exclusiones, propietario y frecuencia de cálculo."
+BI-003,M21,P1,Parcial,Algunas métricas abren sus registros,"Todo indicador permite abrir los registros que lo componen, respetando permisos."
+BI-004,M21,P1,No lo trae,Sin verificar,La comparación entre periodos no mezcla meses de años distintos.
+BI-005,M21,P2,No lo trae,Sin verificar,La exportación declara con exactitud el formato que entrega.
+BI-006,M21,P1,Parcial,Métricas filtradas por rol,Los paneles y las métricas se filtran por rol y alcance.
+BI-007,M21,P1,Parcial,"Embudo, primera respuesta y actividad por atendente","Comercial: leads, primera respuesta, conversión, ciclo, proformas enviadas, ventas, ticket y actividad, con filtro por asesor y total."
+BI-008,M21,P1,Parcial,Atribución de anuncios y entregas de campaña,"Marketing: fuente, campaña, entrega, respuesta, cita, oportunidad y conversión."
+BI-009,M21,P1,No lo trae,Sin indicadores técnicos,"Técnica: equipos, etapas, tiempos, productividad, retrabajo, garantía y desempeño de proveedores."
+BI-010,M21,P2,No lo trae,Sin indicadores de producto,"Producto: frecuencia de venta y de reparación, fallas recurrentes, rentabilidad y satisfacción."
+BI-011,M21,P2,Parcial,Ventas por contacto,"Cliente: compras, ticket, frecuencia, servicio, contratos, incidencias y rentabilidad."
+BI-012,M21,P0,No lo trae,Sin regla de salario,La analítica no permite inferir el salario individual a usuarios no autorizados.
+BI-013,M21,P1,No lo trae,Sin SLA por contrato,"Los umbrales de SLA son configurables por contrato y tipo de servicio, no fijos."
+BI-014,M21,P1,No lo trae,Sin reporte técnico,"Reporte diario y semanal por técnico: equipos revisados, reparados, proformas técnicas emitidas y aprobadas, desglosado por cliente y por equipo."
+BI-015,M21,P2,No lo trae,Sin valor producido técnico,"Valor producido por cada colaborador técnico frente a su costo en el periodo, visible solo para roles autorizados y sujeto a la decisión D-10."
+CAL-001,M06,P1,Lo trae,Citas ligadas a contacto y conversación,Los eventos se crean desde la ficha del cliente o de la oportunidad y se reflejan en el calendario.
+CAL-002,M06,P1,Parcial,Márgenes antes y después por tipo de evento; sin viaje por ubicación,"Detección de conflictos que contemple duración, preparación y viaje, no solo la hora del evento."
+CAL-003,M06,P1,Parcial,"Márgenes por tipo de evento, no por cliente ni ubicación","La reunión presencial exige tiempo de viaje y admite tiempo de preparación, ambos editables por cliente y ubicación."
+CAL-004,M06,P1,Parcial,Tipo «visita» con ubicación y duración; sin local/interprovincial,"La visita registra ubicación, duración estimada y si es local o interprovincial."
+CAL-005,M06,P2,No lo trae,Sin aviso por tiempo de viaje,Aviso para visitas locales: tiempo de viaje más dos horas. Regla configurable.
+CAL-006,M06,P2,No lo trae,Sin aviso interprovincial,Aviso para viajes interprovinciales: tiempo de viaje más cuarenta y ocho horas. Regla configurable.
+CAL-007,M06,P2,Parcial,Notificaciones push en el navegador,"Notificación al móvil del responsable para los viajes que lo requieran, además del aviso en pantalla."
+CAL-008,M06,P2,Parcial,Sincroniza Google Calendar; Outlook no,"Sincronización con calendarios externos —Google Calendar y Microsoft Outlook, los que nombró el cliente— sin duplicar eventos ni perder al propietario."
+CAL-009,M06,P1,Parcial,Disponibilidad del atendente en el reparto,El horario laboral y los eventos corporativos se consideran al asignar leads y al agendar citas.
+CAL-010,M06,P0,No lo trae,Sin resolución de conflicto personal contra corporativo,"Un evento de calendario personal externo nunca tiene prioridad sobre un compromiso corporativo, pero tampoco se borra: se resuelve como conflicto con decisión humana."
+CAL-011,M06,P1,Parcial,Registra motivo de cancelación y reprogramación; falta política de notificación,Cambiar o cancelar una cita registra motivo y notifica según la política definida.
+CAL-012,M06,P1,Lo trae,Zona horaria por cita,Los recordatorios se calculan en la zona horaria de Ecuador continental.
+CAL-013,M06,P1,Parcial,Disponibilidad y márgenes; sin bloqueo por viaje con excepción por rol,"Por defecto el sistema impide crear un evento que se cruce con un bloque ocupado —preparación, viaje y permanencia con el cliente, en minutos, horas o días—. Solo un rol autorizado puede forzarlo, registrando el motivo."
+CAL-014,M06,P1,Parcial,Agenda con vistas; falta lista filtrable por cliente,"Vistas de día, semana y mes, más una lista de pendientes ordenada por fecha y filtrable por cliente."
+CAL-015,M06,P2,Lo trae,Recordatorio al contacto por WhatsApp,Un evento ligado a un cliente puede enviar invitación o recordatorio al contacto por el canal permitido.
+CAM-001,M16,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Cliente, Sitio, Sistema y Activo son entidades separadas, relacionadas por identificador."
+CAM-002,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,El catálogo de componentes de infraestructura es extensible por un administrador.
+CAM-003,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Cada componente instalado admite descripción de características técnicas y queda ligado al sitio.
+CAM-004,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Existe una auditoría de sitio que compara lo instalado contra lo registrado y reporta diferencias.
+CAM-005,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"El sitio registra coordenadas, accesos, riesgos, contactos y documentación."
+CAM-006,M16,P1,Parcial,Tipo de cita «visita» en el calendario,"La visita se liga a orden, calendario, cuadrilla, viaje, lista de verificación y firma."
+CAM-007,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Listas de verificación configurables por tipo de trabajo y tipo de sitio.
+CAM-008,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Mantenimiento preventivo con periodicidad, activos cubiertos y próxima fecha."
+CAM-009,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Estudios de ingeniería con inicio, vigencia, alcance, mediciones y documento."
+CAM-010,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"El vencimiento del estudio alimenta alertas, tareas y campañas autorizadas."
+CAM-011,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La cobertura circular se etiqueta explícitamente como aproximación, nunca como estudio de radiofrecuencia."
+CAM-012,M16,P2,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La herramienta de cálculo de arneses guarda su resultado asociado a un sitio o a una orden.
+CAM-013,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Modo sin conexión para listas de verificación, fotografías, mediciones y firma."
+CAM-014,M16,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Historial por activo: mantenimientos, incidencias, cambios y mediciones."
+CAT-001,M12,P1,Parcial,Categoría como texto libre; no jerárquica,Categorías jerárquicas y extensibles. Está prohibido usar una categoría “varios” como solución permanente.
+CAT-002,M12,P1,No lo trae,"No separa producto, repuesto, servicio y trabajo técnico","Se distinguen producto, repuesto, servicio y trabajo técnico como entidades separadas."
+CAT-003,M12,P1,No lo trae,Sin tipos de servicio técnico,"Los servicios distinguen reparación, calibración, ajuste, confección, mantenimiento y renta de radiofrecuencia."
+CAT-004,M12,P1,Parcial,Filtro por categoría de texto,Al seleccionar un producto o servicio se puede filtrar por categoría o por servicio específico.
+CAT-005,M12,P0,No lo trae,Sin compatibilidad repuesto-modelo,"La compatibilidad entre repuesto y modelo se establece por identificador, nunca por coincidencia de texto."
+CAT-006,M12,P1,Parcial,Marca como texto libre,Marcas ilimitadas. La restricción actual a dos marcas desaparece.
+CAT-007,M12,P0,No lo trae,Sin integración con UpConta,"En modo integrado, el código, la descripción, el precio base y la tarifa de impuesto provienen de UpConta y se referencian por identificador; en modo autónomo los administra OMNITRONEC 360 con tarifas configurables."
+CAT-008,M12,P1,No lo trae,Sin listas de precio,"Las listas de precio por categoría de cliente o distribuidor las administra OMNITRONEC 360, porque el sistema contable maneja un solo precio por producto."
+CAT-009,M12,P1,No lo trae,Sin cola hacia UpConta,"Un producto creado en OMNITRONEC 360 puede escribirse hacia UpConta; si la escritura no está disponible, queda en una cola de pendientes y el catálogo sigue operando."
+CAT-010,M12,P1,Parcial,Importación por lotes,Importación masiva con simulación previa y auditoría.
+CAT-011,M12,P0,Parcial,Campo activo; falta impedir el borrado físico,Los elementos referenciados se desactivan; nunca se borran físicamente.
+CAT-012,M12,P2,Parcial,Una imagen por producto,"Imagen, ficha técnica y atributos comerciales reutilizables en catálogo y documentos."
+CAT-013,M12,P1,No lo trae,Sin regla,Ningún elemento del catálogo global puede llevar el nombre de un cliente concreto.
+CAT-014,M12,P1,No lo trae,Sin plantilla de categorías,"La estructura de categorías macro y micro de todos los equipos atendidos —radiocomunicación, impresoras, controles de acceso y demás— se entrega como plantilla semilla y el cliente la valida antes de cargarla."
+CAT-015,M12,P1,Parcial,Costo y precio separados; sin permiso para ver el costo,Productos y repuestos registran por separado su costo y su precio de venta al cliente final; el costo solo es visible con permiso.
+CLI-001,M02,P0,Lo trae,Todo se relaciona por UUID,"Toda relación entre entidades se establece por identificador estable, nunca por el nombre del cliente."
+CLI-002,M02,P1,Lo trae,companies + people + company_people con cargo y departamento,"Varias personas de contacto por organización, cada una con cargo, departamento, correo, teléfono y WhatsApp propios."
+CLI-003,M02,P1,Parcial,Marca de tomador de decisión; falta representante legal,Identificación explícita del representante legal entre los contactos.
+CLI-004,M02,P1,No lo trae,Una sola dirección por empresa; no hay sitios con instrucciones de acceso,"Varios sitios y direcciones por cliente, con instrucciones de acceso para la visita."
+CLI-005,M02,P1,Parcial,"Empresas con datos de Brasil (CNAE, BrasilAPI); industria y provincia no son catálogo","Industria, categoría de empresa y provincia configurables desde catálogo, no fijas en código."
+CLI-006,M02,P1,Parcial,"Ficha 360 con conversaciones, notas y ventas; faltan servicios técnicos","Historial cronológico unificado de conversaciones, notas, eventos, ventas y servicios a nivel de organización."
+CLI-007,M02,P1,Lo trae,Conversaciones y notas por contacto,"Cada contacto conserva además su propio historial de conversación y sus notas, de modo que cualquier asesor sepa exactamente en qué quedó con esa persona."
+CLI-008,M02,P1,Lo trae,Etiquetas en contactos con filtro,"Etiquetas libres creables por el propio asesor sobre contactos y organizaciones, con filtrado por etiqueta."
+CLI-009,M02,P1,Parcial,Las ventas son registros repetibles; mantenimientos no existen,"Las compras y los mantenimientos se registran como eventos repetibles, no como un campo único que se sobrescribe."
+CLI-010,M02,P1,No lo trae,No hay motor de renovaciones,"Las fechas de contrato, estudio, póliza, compra y mantenimiento alimentan automáticamente el motor de renovaciones."
+CLI-011,M02,P1,Parcial,"Búsqueda por nombre, correo y teléfono; usa CPF/CNPJ en lugar de RUC/cédula","Búsqueda por nombre, razón social, RUC, cédula, correo, teléfono y WhatsApp."
+CLI-012,M02,P1,Lo trae,Fusión de contactos duplicados (api/v1/contacts/merge),"Detección, revisión y fusión controlada de duplicados."
+CLI-013,M02,P2,Parcial,Puntuación de leads (crm_lead_scores); falta semáforo manual con motivo,"Scoring automático y explicable, separado de un semáforo manual con motivo y fecha."
+CLI-014,M02,P2,Parcial,Historial de ventas propias; sin conciliación con UpConta,"Ficha analítica con compras, ticket promedio, productos, precio histórico de cada producto, facturas con monto y fecha, y servicios; conciliada con UpConta cuando la integración está activa."
+CLI-015,M02,P0,Lo trae,"Consentimiento, baja y ley de datos (LGPD) por contacto",Consentimientos y preferencias por canal registrados antes de automatizar cualquier comunicación.
+CLI-016,M02,P0,Parcial,Hay controles por rol; falta confirmar el bloqueo de exportación global al asesor,La exportación de la base completa queda restringida. Un asesor no puede descargar la base global.
+CLI-017,M02,P1,No lo trae,No hay conversión a cliente fiscal ni enlace con UpConta,"La conversión de prospecto a cliente crea el cliente fiscal en OMNITRONEC 360 y, en modo integrado, lo vincula o lo crea en UpConta, sin perder historial."
+CLI-018,M02,P1,Parcial,Campos personalizados en contactos y leads; falta visibilidad por rol y organización,"Administración define campos personalizados para organización, contacto y oportunidad —tipo de dato, obligatoriedad, lista de valores y visibilidad por rol— utilizables en filtros, segmentos, plantillas, automatizaciones e informes."
+COM-001,M08,P1,Parcial,WhatsApp desde la ficha; correo no,"Envío de correo y WhatsApp desde el contexto del cliente, sin cambiar de pantalla."
+COM-002,M08,P1,Lo trae,Estado de entrega y responsable,"Registro de los mensajes enviados y recibidos, con estado de entrega y responsable."
+COM-003,M08,P1,Lo trae,Distingue manual de campaña,Distinción explícita entre comunicación manual y campaña automatizada.
+COM-004,M08,P1,Lo trae,Notas con autor y fecha,"Notas manuales ilimitadas con autor, fecha, edición y auditoría."
+COM-005,M08,P1,Parcial,Llamadas de voz y actividades,Registro del resultado de llamadas y reuniones que no dejan rastro en el chat.
+COM-006,M08,P1,Lo trae,Variables en plantillas,"Las plantillas insertan variables de cliente, contacto, oportunidad y asesor."
+COM-007,M08,P1,Parcial,Adjuntos en almacenamiento privado; sin relación con documentos,Los adjuntos se almacenan una sola vez y se relacionan con la conversación y el documento.
+COM-008,M08,P1,Lo trae,Borradores de respuesta de IA con aprobación humana,La IA propone texto usando el contexto autorizado; una persona aprueba antes de enviar.
+COM-009,M08,P1,Lo trae,Transferencia conserva historial y avisa,Transferir una conversación conserva el historial y notifica al nuevo responsable.
+COM-010,M08,P0,Parcial,"Horarios de envío, baja y consentimiento","Se respetan horario, preferencias, consentimiento y canal permitido de cada contacto."
+COM-011,M08,P1,Lo trae,Conversaciones por contacto,El historial no mezcla conversaciones de distintos contactos de una misma organización sin identificar al destinatario.
+COM-012,M08,P2,Parcial,Análisis de sentimiento e intención parcial,"La IA identifica la intención del mensaje —saludo, envío de información, seguimiento comercial o recompra— y la combina con el enfoque que indica el asesor."
+COT-001,M11,P1,Parcial,Plantillas de propuesta (proposal_templates),Plantillas versionadas con variables y vigencia.
+COT-002,M11,P1,Parcial,La proforma toma los datos del lead; sin carta,La carta se genera desde la ficha sin volver a escribir ningún dato del cliente.
+COT-003,M11,P1,Parcial,La proforma se envía por WhatsApp,La carta resultante se envía por el canal activo y queda archivada en el repositorio.
+COT-004,M11,P1,Parcial,Líneas de producto con descuento; sin mano de obra ni transporte tipificados,"La proforma admite productos, servicios, mano de obra, transporte y logística, y condiciones comerciales."
+COT-005,M11,P1,No lo trae,Sin duplicar hacia otra sucursal,La proforma se puede duplicar hacia otra sucursal o contacto conservando todas sus líneas.
+COT-006,M11,P2,No lo trae,Sin tono por tipo de cliente,Se diferencia plantilla y tono entre cliente final y distribuidor.
+COT-007,M11,P2,No lo trae,Sin texto persuasivo condicional,"El texto comercial persuasivo es opcional, se aplica solo a cliente final y nunca altera precios ni hechos."
+COT-008,M11,P0,Lo trae,Versiones conservadas,"Se conservan todas las versiones con sus comentarios, totales y resultado."
+COT-009,M11,P0,Lo trae,Editar crea una revisión nueva,Editar un documento emitido genera una revisión nueva; nunca se sobrescribe.
+COT-010,M11,P2,No lo trae,Sin cálculo de erosión de valor,"Se calcula la diferencia entre la propuesta inicial y la final, el descuento aplicado y la erosión de valor."
+COT-011,M11,P1,Parcial,Registra quién decidió y el motivo; sin evidencia,"La aceptación o el rechazo registran identidad, fecha, comentario y evidencia."
+COT-012,M11,P0,No lo trae,Sin conversión a factura en UpConta,"En modo integrado, la conversión a factura se ejecuta contra UpConta con clave de idempotencia para no emitir dos veces. En modo autónomo se registra la venta con su documento interno y la emisión fiscal queda marcada como pendiente."
+COT-013,M11,P0,No lo trae,Sin políticas de impuestos congeladas (Ecuador),"Impuestos, moneda, garantía y términos son políticas versionadas —tomadas de UpConta en modo integrado o de la configuración propia en modo autónomo— y se congelan al emitir."
+COT-014,M11,P0,Parcial,Numeración por año en el servidor; sin sede,"La numeración es transaccional y se genera en el servidor, por documento, sede y año."
+COT-015,M11,P0,Lo trae,PDF generado en el servidor,"El PDF se genera en el servidor a partir del mismo conjunto de datos aprobado, nunca recalculado en el navegador."
+COT-016,M11,P1,Lo trae,Proforma para un prospecto sin datos fiscales,Una proforma puede emitirse a un prospecto con datos mínimos —nombre y un medio de contacto—; los datos fiscales completos solo se exigen al solicitar la factura.
+COT-017,M11,P1,Parcial,Marca propia aplicable,"La proforma lleva la identidad de marca de OMNITRONEC: presentación cuidada y profesional, sin convertirse en pieza publicitaria."
+COT-018,M11,P2,No lo trae,Sin generador de catálogo,"Generador de catálogo de productos: a partir del catálogo existente —descripciones, imágenes y fichas— el usuario elige productos o categorías y la lista de precios del cliente, y obtiene un PDF con la plantilla de marca."
+COT-019,M11,P1,No lo trae,Sin proforma técnica,"La proforma técnica admite mano de obra calculada por cantidad de equipos y descuentos específicos para un cliente, con su motivo."
+DISP-001,M01,P1,Parcial,attendant_availability: horario y capacidad por usuario; no por equipo ni sede,"Horario laboral configurable por usuario, equipo y sede."
+DISP-002,M01,P1,Parcial,Disponibilidad y excepciones de calendario; sin registro formal de vacaciones y permisos,"Registro de ausencias, vacaciones y permisos con fecha y hora de inicio y fin."
+DISP-003,M01,P1,Lo trae,El reparto automático excluye a quien no está disponible o sin capacidad,Un usuario ausente o fuera de horario queda excluido del reparto automático de leads y de nuevas asignaciones.
+DISP-004,M01,P1,Parcial,Transferencia de conversaciones auditada; no reasigna en bloque oportunidades y eventos,Las oportunidades y eventos activos de un usuario ausente se reasignan conservando el historial completo.
+DISP-005,M01,P1,Parcial,conversation_assignment_events registra de quién a quién; sin vigencia de sustitución,"Toda sustitución registra responsable anterior, nuevo responsable, motivo y vigencia."
+DISP-006,M01,P2,No lo trae,Sin integración contable de personal (es P2 y opcional),La disponibilidad puede sincronizarse con el sistema contable cuando este ofrezca módulo de personal; su ausencia no degrada ninguna función.
+DOC-001,M10,P1,No lo trae,Sin repositorio documental por cliente,"Repositorio dentro de la ficha del cliente, con estructura inicial y carpetas que el usuario pueda crear."
+DOC-002,M10,P1,No lo trae,Sin búsqueda documental,"Búsqueda por cliente, RUC, contacto, teléfono, tipo, etiqueta, fecha y texto indexado cuando sea posible."
+DOC-003,M10,P2,Parcial,La base de conocimiento lee PDF; sin repositorio,"Formatos admitidos: PDF, DOCX, XLSX, TXT, PPTX, HTML, JPG y PNG."
+DOC-004,M10,P1,No lo trae,Sin exportación documental,"Exportación individual o masiva, sujeta a permiso y con registro."
+DOC-005,M10,P0,No lo trae,Sin versionado de archivos,"Versionado con suma de verificación, propietario, fecha, origen y política de retención."
+DOC-006,M10,P1,No lo trae,Sin relación de un archivo con varias entidades,Un archivo puede relacionarse con varias entidades sin duplicar el binario.
+DOC-007,M10,P0,Parcial,Enlaces firmados temporales en el almacenamiento,"Enlaces compartidos temporales, revocables y con alcance limitado."
+DOC-008,M10,P0,Parcial,Valida el tipo por contenido; sin antivirus,Validación antivirus y límites de tamaño y tipo.
+DOC-009,M10,P0,No lo trae,Sin papelera,Borrado lógico con papelera y retención legal.
+DOC-010,M10,P1,No lo trae,Sin coexistencia con Google Drive,Migración o coexistencia controlada con los documentos que hoy viven en Google Drive.
+EXT-001,M15,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Catálogo de proveedores técnicos con capacidades, contactos y condiciones. Un proveedor puede ser una persona independiente o una empresa."
+EXT-002,M15,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La orden externa incluye equipos, diagnóstico previo, trabajo requerido y la fecha comprometida con el cliente."
+EXT-003,M15,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Actas de salida y de retorno, con cambio de custodia firmado y responsable identificado."
+EXT-004,M15,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Los costos del proveedor se registran separados del precio al cliente y su visibilidad depende del permiso.
+EXT-005,M15,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,El reloj del proveedor corre separado del tiempo interno.
+EXT-006,M15,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Portal externo limitado con el alcance exacto descrito arriba.
+EXT-007,M15,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"El proveedor puede declarar que no pudo reparar, indicando qué ocurrió con cada equipo."
+EXT-008,M15,P2,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Indicadores de puntualidad, calidad, costo, retrabajo y garantías por proveedor."
+EXT-009,M15,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La garantía otorgada por el proveedor queda registrada y es reclamable desde la plataforma.
+EXT-010,M15,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"El acta de salida al proveedor externo es digital e imprimible, e incluye las notas y solicitudes del cliente —por ejemplo, la fecha en que necesita el equipo— separadas de las observaciones internas."
+FREQ-001,M17,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Plan de canales por cliente, con todos los campos observados en el sistema actual."
+FREQ-002,M17,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"El plan se asocia al cliente y al sitio mediante identificador, nunca por nombre."
+FREQ-003,M17,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Cada canal indica si es analógico o digital, y solo exige los campos DMR cuando es digital."
+FREQ-004,M17,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,El plan de frecuencias se vincula a la póliza ARCOTEL correspondiente y a su fecha de vencimiento.
+FREQ-005,M17,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,El vencimiento de la póliza genera alerta con al menos un mes de antelación y escala a un responsable.
+FREQ-006,M17,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Se registra qué plan de canales se programó en cada equipo entregado y en qué fecha.
+FREQ-007,M17,P2,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Detección de conflictos: dos clientes con la misma frecuencia y tono en la misma zona geográfica.
+FREQ-008,M17,P2,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Exportación del plan en el formato que admite el software de programación de cada fabricante.
+FREQ-009,M17,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Historial de cambios del plan, con responsable, fecha y motivo."
+FREQ-010,M17,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La migración debe fusionar los registros que hoy representan sitios como si fueran clientes distintos.
+FREQ-011,M17,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La vigencia de cada póliza ARCOTEL se configura por póliza —anual o plurianual, hasta cinco años—, porque muchos clientes la renuevan cada año aunque podrían hacerlo por cinco."
+GAR-001,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Catálogo de garantías administrable, con creación por días, meses, años o rango de fechas."
+GAR-002,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La creación y edición del catálogo está restringida a administración o a un rol autorizado.
+GAR-003,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,El usuario operativo —por ejemplo un técnico— selecciona qué garantía aplica al caso que está atendiendo.
+GAR-004,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Una garantía se aplica a un producto vendido, ligada al producto de una factura y a su fecha."
+GAR-005,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Una garantía se aplica a un servicio de reparación, contada desde la entrega."
+GAR-006,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Una garantía se aplica a un repuesto instalado en el equipo de un cliente.
+GAR-007,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Toda garantía aplicada muestra su tiempo restante de forma visible y calculada.
+GAR-008,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Una garantía puede ser tercerizada e identificar al proveedor obligado a reparar.
+GAR-009,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La recepción de un equipo consulta si existe garantía vigente y la propone automáticamente.
+GAR-010,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La garantía aplicada a una orden determina el resultado económico: servicio sin costo y decisión pieza por pieza sobre los repuestos.
+GAR-011,M18,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Al emitirse, el documento congela el texto y el plazo de la garantía vigente en ese momento."
+GAR-012,M18,P2,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Panel de garantías próximas a vencer, por cliente y por proveedor."
+GAR-013,M18,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La política vigente observada —90 días desde la entrega, sobre mano de obra y repuestos sustituidos, ante reaparición del mismo síntoma o causa raíz— se carga como garantía por defecto del servicio de reparación, sujeta a aprobación formal."
+HAB-001,M09,P1,No lo trae,Sin speech por producto e industria,"El speech de venta se define por categoría o producto y por industria del cliente, y se muestra automáticamente en la ficha y en la oportunidad según lo seleccionado."
+HAB-002,M09,P1,No lo trae,Sin puntos fuertes,"Los puntos fuertes a comunicar —dolores del cliente y cómo los resuelve el producto— se configuran por producto y por categoría de cliente, como lista breve y separada del speech."
+HAB-003,M09,P1,No lo trae,Sin objeciones estructuradas,"Las objeciones y sugerencias del cliente se registran de forma estructurada, vinculadas a producto o categoría del catálogo, a la oportunidad y al cliente."
+HAB-004,M09,P1,No lo trae,Sin tabulación de objeciones,"Las objeciones se pueden filtrar y tabular por producto, categoría, industria, etapa y asesor en los paneles del asesor, de la jefatura y de la gerencia."
+HAB-005,M09,P1,No lo trae,Sin speech,Los asesores y la administración pueden crear speech; la jefatura del departamento y la gerencia pueden editar cualquiera y fijar una versión para que no se modifique más.
+HAB-006,M09,P1,Parcial,El patrón de versiones con puntero existe para configuraciones de IA,"Cada pieza —speech, puntos fuertes y respuesta a objeción— tiene propietario, versión, estado (borrador, publicada, fijada, retirada) e historial. Una versión fijada solo la cambia quien la fijó o un rol superior."
+HAB-007,M09,P1,Parcial,Base de conocimiento (RAG) por organización,Los agentes de speech y de objeciones (M22) usan como base de conocimiento solo el contenido publicado de este módulo y las objeciones registradas a las que el usuario tiene acceso.
+HAB-008,M09,P2,No lo trae,Sin speech por cliente,Un asesor puede crear speech por producto y para un cliente específico. El de cliente específico queda para su uso; el general queda en borrador hasta que la jefatura lo publique para todos.
+IA-001,M22,P1,Lo trae,"Agentes por función con routers, skills y políticas","Agentes separados por función, cada uno con su contexto, herramientas y política."
+IA-002,M22,P1,Lo trae,"Varios proveedores (OpenAI, Anthropic, Google, OpenRouter) con credenciales cifradas","Uno o varios proveedores y modelos configurables, sin exponer credenciales al navegador."
+IA-003,M22,P0,Parcial,Contexto por organización y RAG; falta limitarlo por permiso del usuario,El contexto se limita a los datos autorizados y relevantes para la tarea.
+IA-004,M22,P0,Parcial,Guardas antes de enviar (before-send),"La IA nunca inventa una medición, un trabajo, un precio, una aprobación, una causa raíz ni un acuerdo."
+IA-005,M22,P0,Parcial,"Hay borradores, pero el agente de atención responde solo por diseño",Toda salida se presenta como borrador editable y exige aceptación humana antes de usarse.
+IA-006,M22,P0,Lo trae,Registro de llamadas al modelo y versiones de agente (llm_calls),"Se registra modelo, versión, agente, política, usuario y resultado aceptado."
+IA-007,M22,P1,Parcial,Herramientas MCP sobre el CRM; sin fichas técnicas,"El agente de propuesta comparativa consulta inventario, precios y fichas técnicas del sistema."
+IA-008,M22,P2,No lo trae,Sin búsqueda web,Ese mismo agente puede buscar en internet las características que falten en el catálogo.
+IA-009,M22,P1,Parcial,Propuestas redactadas por el agente y editables,La propuesta comparativa resultante es editable por el asesor antes de enviarse.
+IA-010,M22,P2,No lo trae,Sin edición de plantillas de documento por IA,Los agentes pueden crear o modificar plantillas de documento; su publicación exige aprobación.
+IA-011,M22,P2,No lo trae,Sin paneles en lenguaje natural,"Existe una ventana donde el usuario describe en lenguaje natural el panel de indicadores que necesita, y un agente lo construye sobre datos reales."
+IA-012,M22,P2,No lo trae,Sin paneles generados,"El panel generado se guarda, se edita, se duplica, se comparte y se retira, con propietario identificado."
+IA-013,M22,P2,No lo trae,Sin exportación de paneles,El panel se exporta como informe con los datos que lo componen.
+IA-014,M22,P0,No lo trae,Sin paneles generados,El alcance de datos del panel nunca excede los permisos del usuario que lo solicita.
+IA-015,M22,P1,No lo trae,Sin definiciones de indicador,Todo panel generado muestra la definición de cada indicador que presenta.
+IA-016,M22,P1,Parcial,Versiones con puntero (playbook_versions),El speech y los puntos fuertes publicados tienen propietario y versión. El detalle está en M09.
+IA-017,M22,P0,Parcial,Puntuación de leads; falta explicación,"El scoring explica sus factores, su fecha y su confianza, y no discrimina por atributos sensibles."
+IA-018,M22,P1,Lo trae,Paso a humano; el flujo manual no depende de la IA,Un fallo del proveedor de IA no bloquea ningún flujo manual.
+IA-019,M22,P2,No lo trae,Sin agente de campañas,"Agente de campañas: propone secuencias y textos según el tipo de campaña, con la misma política de borrador y aprobación humana."
+IA-020,M22,P3,No lo trae,Sin análisis de evolución de proformas,"El análisis de la evolución de las proformas —primera frente a final— propone los factores que llevaron al cierre, como sugerencia para la habilitación comercial."
+IAM-001,M01,P0,Lo trae,Usuarios individuales con Supabase Auth,Autenticación individual. Quedan prohibidas las cuentas compartidas.
+IAM-002,M01,P0,Parcial,"Doble factor TOTP opcional; se puede exigir por política, no por operación sensible","Doble factor obligatorio para administradores, exportaciones sensibles y operaciones destructivas."
+IAM-003,M01,P1,No lo trae,No hay organigrama: solo roles e invitaciones de equipo,"Organigrama configurable por departamentos, sedes, jefaturas y equipos."
+IAM-004,M01,P1,Parcial,"Cinco roles fijos (viewer, agent, ai_operator, manager, admin); faltan recepción, técnico, inventario, contabilidad, etc.","Roles base: superadministrador, gerencia, supervisor, asesor, marketing, recepción, técnico, coordinación, inventario y contabilidad."
+IAM-005,M01,P0,Parcial,"Permisos por rango de rol y RLS; no por acción, entidad, alcance y condición","Permisos granulares por acción, entidad, alcance y condición."
+IAM-006,M01,P0,No lo trae,No separa acceso económico del operativo,El acceso a información económica se otorga por separado del acceso operativo.
+IAM-007,M01,P0,Parcial,Registro de auditoría de solo agregado (api_audit_log); no exige motivo,Toda modificación de rol o permiso genera evento de auditoría y exige motivo.
+IAM-008,M01,P0,Parcial,El usuario se desvincula sin borrar registros; falta verificar el flujo de suspensión,Suspender un usuario no elimina su historial ni sus registros.
+IAM-009,M01,P1,Parcial,Visibilidad por papel vía RLS (épico de gobernanza G1–G6); sin equipos jerárquicos,Un supervisor accede únicamente a los equipos y datos de su alcance.
+IAM-010,M01,P1,No lo trae,No existe rol de consulta transversal sin edición,La gerencia consulta transversalmente sin heredar de forma automática permisos de edición.
+IAM-011,M01,P0,Parcial,"Tokens de servicio (api_tokens, Bearer tok_) para integraciones","Las integraciones usan identidades de servicio, nunca cuentas de personas."
+IAM-012,M01,P2,No lo trae,Sin cierre por inactividad,"Cierre de sesión por inactividad configurable, con aviso previo y sincronización entre pestañas."
+IAM-013,M01,P1,Lo trae,Recuperación de contraseña incluida,"Recuperación de contraseña, hoy inexistente en la aplicación actual."
+INC-001,M19,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La incidencia se liga a cliente, sitio, sistema y activos mediante identificador, no por texto libre."
+INC-002,M19,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La severidad se deriva de impacto y urgencia, no de una selección libre."
+INC-003,M19,P0,Parcial,"«Demandas» registra estado, dueño y desenlace","Todo cambio de estado exige nota, responsable y fecha, y queda registrado."
+INC-004,M19,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"SLA configurable por contrato, severidad y horario de cobertura."
+INC-005,M19,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Pausas de SLA explícitas mientras se espera al cliente, a un repuesto o a un proveedor."
+INC-006,M19,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La resolución exige resumen, causa o hipótesis, fecha y activos restaurados."
+INC-007,M19,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,El cierre exige validación y que las tareas críticas estén terminadas.
+INC-008,M19,P1,Parcial,«Demandas» tiene próximo paso y fecha; tareas existen,Los próximos pasos se convierten en tareas con responsable y vencimiento.
+INC-009,M19,P2,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Análisis de causa raíz formal para severidad crítica o para recurrencias.
+INC-010,M19,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,El tiempo fuera de servicio y la disponibilidad se calculan desde eventos consistentes.
+INC-011,M19,P2,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Detección de recurrencia por sitio, activo y síntoma."
+INV-001,M20,P0,Parcial,El catálogo controla existencias en modo autónomo,"En modo integrado, UpConta es la fuente maestra de existencias, costo, factura y movimiento de bodega. En modo autónomo, OMNITRONEC 360 lleva su propio control de disponibilidad y ubicación, como fija la matriz de propiedad del dato."
+INV-002,M20,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"En modo integrado, OMNITRONEC 360 consulta productos, servicios, precios, clientes y documentos fiscales por API."
+INV-003,M20,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La orden técnica muestra disponibilidad y fecha estimada tomadas de la fuente vigente según el modo; nunca muestra existencias que esa fuente no registre.
+INV-004,M20,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La reserva evita la doble asignación de una misma pieza.
+INV-005,M20,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Toda reserva lleva un plazo en días; al cumplirse, la pieza se libera automáticamente."
+INV-006,M20,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,El plazo máximo de reserva se configura administrativamente según política.
+INV-007,M20,P2,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La liberación automática notifica al responsable de la orden antes de ejecutarse.
+INV-008,M20,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Las bodegas de recepción, técnica y proveedor externo se mapean sin duplicar movimientos contables."
+INV-009,M20,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Toda sincronización conserva el identificador externo, el estado y la fecha de última conciliación."
+INV-010,M20,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Los errores de integración crean una cola de excepciones; nunca producen inconsistencias silenciosas.
+INV-011,M20,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La rentabilidad usa datos conciliados y define explícitamente el tratamiento del costo por hora.
+LAB-001,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La orden se liga a la recepción, al cliente, a los activos y a los custodios."
+LAB-002,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Diagnóstico por equipo, con falla, hipótesis de causa, mediciones y evidencia."
+LAB-003,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Servicios y repuestos se registran por línea, con aprobación independiente cuando aplique."
+LAB-004,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Se distinguen reparación, calibración, ajuste, confección y mantenimiento."
+LAB-005,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Relojes separados: recepción, traspaso, diagnóstico, espera del cliente, espera de repuesto, espera de proveedor, reparación, control de calidad y entrega."
+LAB-006,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Las esperas externas no penalizan la productividad del técnico y se reportan por separado.
+LAB-007,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La reserva de repuesto ocurre después de la aprobación, según la política configurada."
+LAB-008,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La reparación inicia cuando la orden está autorizada y los recursos están disponibles.
+LAB-009,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Un equipo puede entrar en garantía. En ese caso el servicio no se cobra.
+LAB-010,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Por cada repuesto se indica si la garantía lo cubre o si se factura al cliente.
+LAB-011,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La orden muestra la garantía aplicable y su tiempo restante sin que nadie tenga que calcularlo.
+LAB-012,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Una garantía tercerizada identifica al proveedor obligado y permite reclamarle desde la plataforma.
+LAB-013,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"El control de calidad exige pruebas configurables por categoría, modelo y tipo de servicio."
+LAB-014,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La entrega registra el equipo funcionando, las excepciones y la firma del cliente."
+LAB-015,M14,P0,Parcial,PDF en el servidor reutilizable,"Impuestos y totales se calculan una sola vez, en el servidor, y el PDF usa ese mismo resultado."
+LAB-016,M14,P0,Parcial,Patrón de auditoría de solo agregado,"El historial de estados, montos y responsables es de solo agregado: nada se sobrescribe."
+LAB-017,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Una misma orden soporta reparación interna y derivación externa.
+LAB-018,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,La baja técnica se registra con su motivo —no reparable o no rentable— y admite baja parcial de algunos equipos dentro de una misma orden.
+LAB-019,M14,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Cuando un repuesto no está en almacén se registra la solicitud al proveedor o dealer con su fecha, para medir la espera de repuesto por separado."
+LEAD-001,M03,P1,Lo trae,"Bandeja unificada con origen, canal y atribución de anuncios","Inbox unificado que preserva fuente, campaña, parámetros de atribución y canal de entrada."
+LEAD-002,M03,P1,Parcial,Importación por lotes con mapeo de columnas y conflictos; sin validación de consentimiento,"Plantilla de importación con validación de columnas, duplicados y consentimiento."
+LEAD-003,M03,P1,Parcial,Audiencias de campaña separadas del embudo,"Una base fría puede destinarse exclusivamente a campañas, sin entrar al pipeline ni saturar a los asesores."
+LEAD-004,M03,P1,Parcial,Una conversación puede convertirse en lead (spec 17),Una interacción configurable convierte un contacto de campaña en lead atendible y lo hace entrar al pipeline con su origen preservado.
+LEAD-005,M03,P1,No lo trae,No permite importar por rango o selección,"La importación permite seleccionar qué contactos se cargan: todos, una selección manual o un rango numérico —por ejemplo del contacto 1 al 500 de una base de 2.000— para destinarlos a una campaña concreta con plantillas preconfiguradas."
+LEAD-006,M03,P1,Lo trae,Reparto rotativo (rodízio) entre asesores,Reparto equitativo entre los asesores disponibles.
+LEAD-007,M03,P1,Lo trae,Excluye ausentes y a quien agotó su capacidad,"Exclusión automática de ausentes, de quienes están fuera de horario y de quienes agotaron su capacidad."
+LEAD-008,M03,P1,Parcial,Métricas por atendente y primera respuesta; falta abandono y aceptación,"Medición de primera respuesta, aceptación, abandono y reasignación."
+LEAD-009,M03,P1,Lo trae,La transferencia conserva el historial,"La reasignación traslada el historial completo: etapa, archivos, notas y eventos."
+LEAD-010,M03,P0,Parcial,Resolución por teléfono y fusión; sin RUC/cédula,Resolución de identidad antes de crear un nuevo cliente o contacto.
+LEAD-011,M03,P0,Parcial,Restricción por rol; falta confirmar el alcance exacto,El administrador puede exportar; el asesor solo dentro de su alcance autorizado.
+LEAD-012,M03,P1,Parcial,Motivos de pérdida configurables,"Registro del motivo de descarte: spam, inválido, no interesado u otro."
+LEAD-013,M03,P0,Parcial,"Cuenta válidos, fallidos y conflictos; sin simulación previa completa","La importación muestra una simulación previa: válidos, duplicados, incompletos, sin consentimiento y rechazados."
+LEAD-014,M03,P1,Parcial,El asesor importa; falta separar destino campaña e inbox propio,"El asesor comercial puede importar bases de contactos con destino a campaña o a su propio inbox. No puede exportar la base de clientes, que queda reservada al administrador."
+LEAD-015,M03,P2,Parcial,Página pública de agendamiento y webhooks de captación,Integración con plataformas externas de agendamiento y de webinars: una cita o una inscripción registrada fuera crea o vincula el lead y lo ingresa al pipeline con su origen.
+MKT-001,M07,P1,Parcial,"Filtro de audiencia; sin industria, provincia ni contrato","Segmentación por industria, provincia, relación, producto, contrato, fechas y comportamiento."
+MKT-002,M07,P1,Parcial,Campañas y secuencias de WhatsApp; sin correo,Campañas de correo y WhatsApp con varios pasos y tiempos configurables entre ellos.
+MKT-003,M07,P1,Lo trae,Plantillas con variables del contacto,"Plantillas reutilizables con campos fijos que se completan solos: nombre del contacto, empresa y cualquier otro campo de la ficha."
+MKT-004,M07,P1,Parcial,Programación por fecha y hora; sin recurrencia mensual,"Programación por fecha y hora exactas, por intervalo en días, por día de la semana o por recurrencia mensual."
+MKT-005,M07,P2,Parcial,Multimedia en WhatsApp,"Las plantillas admiten texto, imagen, audio, vídeo y documento. Los documentos se limitan a PDF."
+MKT-006,M07,P2,Lo trae,Formato de WhatsApp,"El formato de WhatsApp usa párrafos breves y admite negritas y emojis, con una llamada a la acción clara."
+MKT-007,M07,P1,No lo trae,No hay campañas de correo,"El correo admite asunto, banner de encabezado, cuerpo, llamada a la acción y remitente configurado."
+MKT-008,M07,P1,Parcial,Varios números de WhatsApp; correo solo transaccional,"Varios remitentes de correo y varios números de WhatsApp, cada uno con su propósito."
+MKT-009,M07,P1,Lo trae,Varios números con políticas de ruteo por canal,El canal de marketing y el canal de atención se mantienen separados: un número para captación y otro para clientes existentes.
+MKT-010,M07,P1,Lo trae,Respuesta y anuncio crean lead con origen,Una respuesta o conversión puede crear un lead conservando origen y campaña.
+MKT-011,M07,P0,Lo trae,"Pausa, topes diario y por hora, supresión y base legal","Aprobación, prueba, pausa, límites de envío y lista de exclusión antes de cualquier campaña."
+MKT-012,M07,P0,Lo trae,Baja y supresión prevalecen,"El consentimiento, la baja y la supresión prevalecen sobre cualquier automatización."
+MKT-013,M07,P0,Parcial,Versión de contenido por campaña,Una plantilla publicada se versiona: editarla no altera las campañas ya enviadas.
+MKT-014,M07,P0,Parcial,Variables con validación; falta confirmar el bloqueo,Una variable sin valor bloquea el envío o usa un texto alternativo aprobado. Nunca se muestra el marcador al destinatario.
+MKT-015,M07,P1,Parcial,Biblioteca de plantillas; sin mensajes predeterminados por fecha,"Biblioteca de mensajes predeterminados en administración —cumpleaños, vencimiento de contrato, renovación de póliza, estudio de ingeniería, mantenimiento y los que se agreguen—, cada uno como mensaje único o como cadena de mensajes con su programación."
+MKT-016,M07,P1,Parcial,Hay fecha de nacimiento y disparadores; sin vencimientos,"Las fechas de la ficha —cumpleaños del contacto y vencimientos de contrato, póliza, estudio, mantenimiento y compra— pueden disparar la secuencia configurada, siempre sujetas a consentimiento."
+MKT-017,M07,P1,Parcial,Gestión dentro de la plataforma; envío masivo de correo no existe,"Campañas, secuencias y plantillas se gestionan dentro de la plataforma; el envío se delega a un servicio de envío masivo configurable por API o SMTP."
+POST-001,M05,P1,Parcial,Admite varios embudos; falta el de postventa con su lógica,"Pipeline de postventa separado del de captación, igualmente configurable."
+POST-002,M05,P1,No lo trae,No hay contratos de servicio (solo honorarios de abogados),"Contratos con tipo, vigencia, estado, cliente, sitios, activos y documentos asociados."
+POST-003,M05,P1,No lo trae,Sin contratos mixtos,Contratos mixtos soportados mediante líneas o coberturas relacionadas.
+POST-004,M05,P1,No lo trae,Sin alertas de renovación,"Alertas de renovación configurables, con un mínimo inicial de un mes de antelación."
+POST-005,M05,P1,Parcial,Ventas repetibles; sin ciclos de mantenimiento,Varias compras y mantenimientos generan ciclos independientes de seguimiento.
+POST-006,M05,P1,No lo trae,Sin recordatorio de mantenimiento,"Recordatorio de mantenimiento aproximadamente al año desde la entrega, parametrizable por producto y servicio."
+POST-007,M05,P1,No lo trae,Sin pólizas ARCOTEL,"El vencimiento de una póliza ARCOTEL escala a un responsable, por sus consecuencias regulatorias."
+POST-008,M05,P1,Parcial,Automatizaciones crean tareas; falta disparador por vencimiento,"La renovación crea automáticamente tarea y segmento de campaña, sin enviar nada hasta cumplir consentimiento y aprobación."
+POST-009,M05,P1,No lo trae,Sin resultado de renovación,"Se registra el resultado de cada renovación: renovado, perdido, pendiente o no aplica, con motivo."
+POST-010,M05,P2,No lo trae,Sin venta cruzada,"Se muestran oportunidades de venta cruzada y ampliación basadas en historial, como sugerencia y nunca como decisión automática."
+POST-011,M05,P1,Parcial,Secuencias de seguimiento de varios pasos (followup); falta disparo por vencimiento,Cada vencimiento dispara una secuencia configurable de avisos al cliente y al asesor —no un aviso único— que se detiene cuando se registra el resultado de la renovación.
+POST-012,M05,P2,Parcial,Libro de fidelización (loyalty_ledger),"Acciones de fidelización para clientes de postventa —ofertas, descuentos condicionados a un monto de compra, beneficios en mantenimiento— con vigencia, segmento destinatario y resultado registrado."
+REC-001,M13,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Acta digital compatible con tableta y firma manuscrita del cliente.
+REC-002,M13,P1,Parcial,La ficha del contacto ya existe para reutilizarla,Los datos del cliente y del contacto se reutilizan desde la ficha; no se vuelven a escribir.
+REC-003,M13,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Cada equipo o lote recibe un código que permite identificar cliente y acta sin exponer datos personales.
+REC-004,M13,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Se registran estado, accesorios, falla declarada, garantía aplicable y evidencia fotográfica."
+REC-005,M13,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,“Entregado a técnica” solo lo marca recepción. “Recibido por técnica” solo lo marca técnica.
+REC-006,M13,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Las marcas de tiempo y los responsables son inmutables; una corrección genera un evento nuevo.
+REC-007,M13,P0,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Toda diferencia entre lo entregado y lo recibido abre una excepción formal.
+REC-008,M13,P1,Parcial,Envío por WhatsApp y PDF en el servidor reutilizables,El acta emitida se envía al cliente por su canal preferido —WhatsApp o correo— y se archiva automáticamente.
+REC-009,M13,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,Desde la custodia se puede derivar uno o varios equipos a un proveedor externo registrado.
+REC-010,M13,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"El retorno del proveedor puede dirigirse al área técnica o a recepción, según se decida."
+REC-011,M13,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,El catálogo extensible permite recibir equipos que no son radios.
+REC-012,M13,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,El tiempo de diagnóstico no empieza a correr hasta que técnica confirme la recepción.
+REC-013,M13,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"La firma del acta captura, además del trazo manuscrito, el nombre y la cédula del firmante y la fecha y hora. Todo lo demás se completa desde datos ya registrados."
+REC-014,M13,P1,No lo trae,Módulo técnico o de integración contable: no existe en DeskcommCRM,"Cada equipo recibido registra su condición —nuevo o usado— y su propiedad: del cliente o de OMNITRONEC, por ejemplo un equipo en renta."
+REC-015,M13,P1,Parcial,Creación rápida de contacto,"Si el cliente no existe, se crea en el momento de la recepción con los datos mínimos, sin salir del flujo."
+VEN-001,M04,P1,Lo trae,"Embudos y etapas configurables (crm_pipelines, crm_stages)","Pipelines configurables: crear, renombrar, reordenar y retirar etapas, con criterios de entrada y salida."
+VEN-002,M04,P1,Lo trae,Reglas CUANDO/SI/ENTONCES por etapa,"Cada etapa admite automatizaciones con disparador, condiciones y acciones, definidas desde configuración."
+VEN-003,M04,P1,No lo trae,No hay regla configurable de venta ganada al facturar o cobrar,La regla que determina cuándo una venta se considera ganada es configurable: al facturar o al cobrar.
+VEN-004,M04,P1,No lo trae,No pasa automáticamente a un embudo de postventa,"Al ganarse una oportunidad, el contacto pasa automáticamente al pipeline de postventa y queda registrado como cliente, sin quedar duplicado como lead."
+VEN-005,M04,P1,Parcial,"Lead con responsable, valor y etapa; próxima acción parcial","Toda oportunidad tiene responsable, valor, etapa y próxima acción."
+VEN-006,M04,P1,Parcial,Notas y actividades del lead; sin objeciones estructuradas,"Se conservan notas, acuerdos, objeciones y conversaciones por oportunidad."
+VEN-007,M04,P1,Lo trae,Las líneas de la proforma referencian el producto del catálogo,Los productos y servicios de la oportunidad se relacionan con el catálogo sincronizado por identificador.
+VEN-008,M04,P1,Lo trae,"Proformas versionadas (versao, substitui_id)","Se registran varias proformas y su evolución, sin sobrescribir la anterior."
+VEN-009,M04,P1,Parcial,Motivo de pérdida; falta competidor,"El cierre perdido exige motivo y, cuando corresponda, competidor y comentario."
+VEN-010,M04,P1,Parcial,Métricas de embudo y por atendente,"Medición de conversión, ciclo, ticket, valor y actividad por asesor, equipo y canal."
+VEN-011,M04,P2,No lo trae,No hay metas,"Metas y progreso visibles para el asesor, según la política de compensación configurada por un administrador."
+VEN-012,M04,P1,Parcial,Etapas y comisiones (commission_rules) configurables; sin metas,"Etapas, criterios, metas y política de comisiones se configuran desde administración."
+VEN-013,M04,P0,Lo trae,El cambio de etapa genera evento (lead_state_transitions),El cambio de etapa genera un evento; no se limita a sobrescribir un campo.
+VEN-014,M04,P2,No lo trae,Sin animación de cierre,"El cierre puede producir un reconocimiento visual —confeti, fuegos artificiales u otra animación— configurable en intensidad según la magnitud de la venta."
+VEN-015,M04,P2,No lo trae,Sin difusión de cierres,"El reconocimiento de un cierre se difunde a todos los usuarios de la plataforma, sin mostrar montos a quien no tenga permiso para verlos."
