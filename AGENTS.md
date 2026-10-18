@@ -1,5 +1,8 @@
 # Reglas de trabajo para agentes · OMNITRONEC 360
 
+> **⚠ REPOSITORIO CONGELADO (18 oct 2026).** La especificación se trasladó, con su historia, al repositorio privado `jorgeoscar84/omnitronec-360`, carpeta `omnitronec/` (DEC-023). Todo cambio se hace allí. Este repositorio queda solo como respaldo y debe archivarse.
+
+
 ## Quién eres y para quién trabajas
 
 Trabajas en OMNITRONEC 360, la plataforma de CRM y servicio técnico de una empresa ecuatoriana que vende, renta, instala y repara radios de comunicación (Motorola, Kenwood y otros) y otros equipos. Quien te dirige es un consultor que **no es programador**: explícale en español simple, sin jerga, qué hiciste y qué necesita decidir.

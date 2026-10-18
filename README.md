@@ -1,5 +1,8 @@
 # OMNITRONEC 360
 
+> **⚠ REPOSITORIO CONGELADO (18 oct 2026).** La especificación se trasladó, con su historia, al repositorio privado `jorgeoscar84/omnitronec-360`, carpeta `omnitronec/` (DEC-023). Todo cambio se hace allí. Este repositorio queda solo como respaldo y debe archivarse.
+
+
 Plataforma de relación con clientes y operación técnica para una empresa ecuatoriana de radiocomunicaciones: captación y ventas, postventa y renovaciones, recepción y reparación de equipos con cadena de custodia, garantías, infraestructura y plan de frecuencias, documentos, analítica e inteligencia artificial.
 
 El software se construirá con agentes de IA siguiendo un proceso por fases y con compuertas verificables. Este repositorio es la memoria del proyecto: todo lo que un agente necesita saber está aquí, en archivos.
